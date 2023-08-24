@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Movie</title>
+    <link rel="stylesheet" href="./create.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <form class="createContainer">
+        <a href="movies.html"><i class="fa-solid fa-house"></i></a>
+        <ul>
+          <h1>Create Movie</h1>
+          <li>
+            <input
+              type="text"
+              name="nameOfTheMovie"
+              id="nameOfTheMovie"
+              placeholder="Enter Name Of The Movie"
+              required
+            />
+          </li>
+          <li>
+            <input
+              type="text"
+              name="imageLinkOfTheMovie"
+              id="imageLinkOfTheMovie"
+              placeholder="Enter Image Link Of The Movie"
+              required
+            />
+          </li>
+          <li>
+            <input
+              type="text"
+              name="videoLinkOfTheMovie"
+              id="videoLinkOfTheMovie"
+              placeholder="Enter Video Link Of The Movie"
+            />
+          </li>
+          <li class="movieGenreContainer">
+            <select name="movieGenre" id="movieGenre">
+              <option id="movieGenrE" value="movieGenre">Movie Genre</option>
+              <option id="action" value="Action">Action movies</option>
+              <option id="documentary" value="Documentary">
+                Documentary movies
+              </option>
+              <option id="scienceFiction" value="ScienceFiction">
+                Science Fiction movies
+              </option>
+              <option id="drama" value="Drama">Drama movies</option>
+              <option id="fantastic" value="Fantastic">Fantastic movies</option>
+              <option id="thrillers" value="Thrillers">Thrillers</option>
+              <option id="horror" value="Horror">Horror movies</option>
+            </select>
+          </li>
+          <li class="yearsContainer">
+            <select name="years" id="years">
+              <option id="yearS" value="years">Movie Years</option>
+              <option id="y2023" value="2023">2023</option>
+              <option id="y2022" value="2022">2022</option>
+              <option id="y2021" value="2021">2021</option>
+              <option id="y2020" value="2020">2020</option>
+              <option id="y2019" value="2019">2019</option>
+              <option id="y2018" value="2018">2018</option>
+              <option id="y2017" value="2017">2017</option>
+              <option id="y2016" value="2016">2016</option>
+              <option id="y2015" value="2015">2015</option>
+              <option id="y2014" value="2014">2014</option>
+              <option id="y2013" value="2013">2013</option>
+              <option id="y2012" value="2012">2012</option>
+              <option id="y2011" value="2011">2011</option>
+              <option id="y2010" value="2010">2010</option>
+            </select>
+          </li>
+          <li class="imdbContainer">
+            <select name="imdb" id="imdb">
+              <option id="imdB" value="imdb">IMDB</option>
+              <option id="m9" value="9">9 and above</option>
+              <option id="m8" value="8">8 and above</option>
+              <option id="m7" value="7">7 and above</option>
+              <option id="m6" value="6">6 and above</option>
+              <option id="m5" value="5">5 and above</option>
+              <option id="m4" value="4">4 and above</option>
+              <option id="m3" value="3">3 and above</option>
+            </select>
+          </li>
+          <li class="movieQualityContainer">
+            <select name="movieQuality" id="movieQuality">
+              <option id="qualityMovie" value="movieQuality">
+                Movie Quality
+              </option>
+              <option id="HD" value="HD">HD(720p / 1080p)</option>
+              <option id="fourK" value="4K">4K(2160p)</option>
+            </select>
+          </li>
+          <li>
+            <textarea
+              name="aboutTheMovie"
+              id="aboutTheMovie"
+              cols="1000"
+              rows="10"
+              placeholder="About The Movie"
+            ></textarea>
+          </li>
+          <div class="buttonsContainer">
+            <button class="createButton">Create Movie</button>
+            <button class="deleteButton">Delete</button>
+          </div>
+        </ul>
+      </form>
+      <script src="./create.js"></script>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1515px;
+  margin: auto;
+}
+body main {
+  background-image: url("https://wallpapers.com/images/hd/the-avengers-vm16xv4a69smdauy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+body main .createContainer {
+  border: 1px solid white;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  max-width: 900px;
+  max-height: 800px;
+}
+body main .createContainer .fa-house {
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+}
+body main .createContainer .fa-house:active {
+  transform: scale(0.95);
+}
+body main .createContainer ul {
+  list-style: none;
+  max-width: 600px;
+  margin: auto;
+}
+body main .createContainer ul h1 {
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 5px 0;
+}
+body main .createContainer ul li {
+  margin: 10px 0;
+  text-align: center;
+}
+body main .createContainer ul li input {
+  width: 80%;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 7px 0;
+  padding-left: 5px;
+}
+body main .createContainer ul li input::-moz-placeholder {
+  text-align: center;
+}
+body main .createContainer ul li input::placeholder {
+  text-align: center;
+}
+body main .createContainer ul li textarea {
+  width: 80%;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 17px;
+}
+body main .createContainer ul li textarea::-moz-placeholder {
+  font-size: 17px;
+  text-align: center;
+  padding-top: 80px;
+}
+body main .createContainer ul li textarea::placeholder {
+  font-size: 17px;
+  text-align: center;
+  padding-top: 80px;
+}
+body main .createContainer ul li select {
+  width: 80%;
+  font-size: 20px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 7px 0;
+}
+body main .createContainer ul .buttonsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+}
+body main .createContainer ul .buttonsContainer button {
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(110, 207, 255);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+body main .createContainer ul .buttonsContainer button:active {
+  transform: scale(0.95);
+}
+
+@media screen and (min-width: 768px) {
+  body main .createContainer {
+    width: 900px;
+    height: 800px;
+  }
+  body main .createContainer ul {
+    width: 600px;
+  }
+  body main .createContainer ul li input {
+    width: 100%;
+  }
+  body main .createContainer ul li textarea {
+    width: 100%;
+  }
+  body main .createContainer ul li select {
+    width: 100%;
+  }
+  body main .createContainer ul .buttonsContainer {
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=create.css.map */

@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://www.hdwallpapers.in/download/thor_hd_avengers_endgame-1920x1080.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+body header .fa-house {
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+}
+body main {
+  display: flex;
+  justify-content: center;
+}
+body main .leftSideContainer {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .leftSideContainer .loginContainer {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 330px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+body main .leftSideContainer .loginContainer h1 {
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+body main .leftSideContainer .loginContainer .inputElements input {
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin: 5px 0;
+}
+body main .leftSideContainer .loginContainer .inputElements input:last-child {
+  background-color: green;
+  color: white;
+  font-size: 17px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+body main .leftSideContainer .loginContainer .inputElements input:last-child:active {
+  transform: scale(0.95);
+}
+body main .leftSideContainer .loginContainer .forgotAndSignIn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body main .leftSideContainer .loginContainer .forgotAndSignIn .forgotPasswordText {
+  color: white;
+  padding: 20px 0;
+  cursor: pointer;
+}
+body main .leftSideContainer .loginContainer .forgotAndSignIn .forgotPasswordText:active {
+  transform: scale(0.95);
+}
+body main .leftSideContainer .loginContainer .forgotAndSignIn .signInButton {
+  padding: 5px 10px;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(243, 137, 9);
+  cursor: pointer;
+}
+body main .leftSideContainer .loginContainer .forgotAndSignIn .signInButton:active {
+  transform: scale(0.95);
+}
+body main .leftSideContainer .forgotPassword {
+  display: none;
+  flex-direction: column;
+  width: 500px;
+  height: 330px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+body main .leftSideContainer .forgotPassword h2 {
+  color: white;
+  font-size: 27px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+body main .leftSideContainer .forgotPassword .inputForgotElements {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body main .leftSideContainer .forgotPassword .inputForgotElements .selectAndInput {
+  margin-bottom: 10px;
+}
+body main .leftSideContainer .forgotPassword .inputForgotElements .selectAndInput select {
+  width: 60px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 0;
+}
+body main .leftSideContainer .forgotPassword .inputForgotElements .selectAndInput .numberInput {
+  font-size: 15px;
+  width: 230px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin: 5px 0;
+}
+body main .leftSideContainer .forgotPassword .inputForgotElements .emailInput {
+  width: 290px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+}
+body main .leftSideContainer .forgotPassword .inputForgotElements .sendSubmit {
+  width: 290px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  font-size: 17px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+body main .leftSideContainer .forgotPassword .inputForgotElements .sendSubmit:active {
+  transform: scale(0.95);
+}
+body main .leftSideContainer .camingCodeContainer {
+  display: none;
+  width: 500px;
+  height: 330px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+body main .leftSideContainer .camingCodeContainer h2 {
+  color: white;
+  font-size: 27px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+body main .leftSideContainer .camingCodeContainer input {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  padding-left: 15px;
+  border: none;
+  border-radius: 5px;
+  margin: 30px 5px;
+}
+body main .leftSideContainer .camingCodeContainer .checkButton {
+  padding: 10px 80px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: rgb(143, 184, 20);
+  cursor: pointer;
+}
+body main .leftSideContainer .camingCodeContainer .checkButton:active {
+  transform: scale(0.95);
+}
+body main .rightSideContainer {
+  display: none;
+  justify-content: center;
+}
+body main .rightSideContainer .signInContainer {
+  width: 500px;
+  height: 580px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+body main .rightSideContainer .signInContainer .signIn {
+  color: white;
+  padding: 30px 0;
+  font-size: 30px;
+}
+body main .rightSideContainer .signInContainer .inputsSignIn {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 290px;
+  gap: 15px;
+}
+body main .rightSideContainer .signInContainer .inputsSignIn input {
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 17px;
+}
+body main .rightSideContainer .signInContainer .inputsSignIn input:last-child {
+  margin: 20px 0;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+body main .rightSideContainer .signInContainer .inputsSignIn input:last-child:active {
+  transform: scale(0.95);
+}
+body main .rightSideContainer .signInContainer .inputsSignIn .selectsCountry {
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+@media screen and (min-width: 1001px) {
+  body main .leftSideContainer {
+    width: 50%;
+  }
+  body main .rightSideContainer {
+    width: 50%;
+  }
+}/*# sourceMappingURL=login.css.map */

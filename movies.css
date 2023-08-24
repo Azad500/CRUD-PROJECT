@@ -1,0 +1,729 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: rgb(0, 47, 47);
+  --writes: rgb(110, 207, 255);
+  --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body {
+  background-color: rgb(2, 85, 85);
+}
+body header {
+  max-width: 1100px;
+  margin: auto;
+}
+body header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background-color: var(--background-color);
+}
+body header nav .barsContainer {
+  padding-left: 40px;
+}
+body header nav .barsContainer .fa-video {
+  display: none;
+}
+body header nav .barsContainer a {
+  display: inline;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 25px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+body header nav .barsContainer a span {
+  color: var(--writes);
+}
+body header nav .toolsContainer {
+  padding-right: 30px;
+}
+body header nav .toolsContainer .fa-bars {
+  display: none;
+  font-size: 25px;
+  color: white;
+}
+body header nav .toolsContainer div {
+  display: none;
+}
+body header .secondNav .movieQuality {
+  text-align: center;
+  padding: 20px 0;
+}
+body header .secondNav .movieQuality .creBtnMdl {
+  display: none;
+}
+body header .secondNav .movieQuality div:nth-child(2) a {
+  border-radius: 5px;
+  display: inline;
+  color: white;
+  text-decoration: none;
+  padding: 10px 130px;
+  background-color: var(--background-color);
+  cursor: pointer;
+}
+body header .secondNav .movieQuality div:nth-child(3) {
+  padding-top: 30px;
+}
+body header .secondNav .movieQuality div:nth-child(3) a {
+  border-radius: 5px;
+  display: inline;
+  color: white;
+  text-decoration: none;
+  padding: 10px 44px;
+  background-color: var(--background-color);
+  cursor: pointer;
+}
+body header .secondNav .movieQuality div:nth-child(3) a:first-child {
+  margin-right: 20px;
+}
+body header .secondNav .addButton {
+  text-align: center;
+}
+body header .secondNav .addButton button {
+  padding: 10px 98px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--background-color);
+  color: white;
+}
+body header .secondNav .searchContainer {
+  text-align: center;
+  padding: 10px 0;
+}
+body header .secondNav .searchContainer input {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  min-width: 80%;
+  padding: 10px 5px;
+  background-color: black;
+  margin-left: 3px;
+}
+body header .secondNav .searchContainer i {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+body header .secondNav .searchContainer i:active {
+  transform: scale(0.95);
+  opacity: 0.6;
+}
+body main {
+  max-width: 1100px;
+  margin: auto;
+}
+body main .movieRobotContainer {
+  background-color: white;
+  margin-top: 20px;
+}
+body main .movieRobotContainer div:first-child {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+body main .movieRobotContainer div:first-child h3 {
+  font-size: 30px;
+}
+body main .movieRobotContainer div:first-child .fa-greater-than {
+  font-size: 13px;
+}
+body main .movieRobotContainer ul {
+  display: none;
+}
+body main .movieRobotContainer ul li {
+  margin-top: 10px;
+  list-style: none;
+}
+body main .movieRobotContainer ul li select {
+  border-radius: 5px;
+  margin-left: 20px;
+  width: 90%;
+  font-size: 17px;
+  padding: 10px 0;
+}
+body main .movieRobotContainer ul .buttonsContainer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+body main .movieRobotContainer ul .buttonsContainer button {
+  padding: 10px;
+  font-size: 17px;
+  color: black;
+  background-color: var(--writes);
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body main .mobileApplicationContainer {
+  margin-top: 20px;
+  font-size: 17px;
+  padding: 0 20px;
+  background-color: var(--writes);
+  box-shadow: var(--box-shadow);
+  height: 130px;
+}
+body main .mobileApplicationContainer p {
+  color: white;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+body main .mobileApplicationContainer p span {
+  color: black;
+}
+body main .mobileApplicationContainer button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  color: white;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 17px;
+  width: 100%;
+  cursor: pointer;
+}
+body main .mobileApplicationContainer button:active {
+  transform: scale(0.95);
+}
+body main .editorChoiseContainer {
+  margin-top: 20px;
+}
+body main .editorChoiseContainer div:first-child {
+  background-color: var(--background-color);
+  margin: auto;
+  width: 90%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .editorChoiseContainer div:first-child h3 {
+  color: white;
+  font-size: 20px;
+}
+body main .editorChoiseContainer .picturesOfMovies {
+  margin: auto;
+  margin-top: 10px;
+  width: 90%;
+  overflow: hidden;
+  position: relative;
+}
+body main .editorChoiseContainer .picturesOfMovies ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: scroll 30s linear infinite;
+}
+body main .editorChoiseContainer .picturesOfMovies ul li {
+  list-style: none;
+  flex: 0 0 10px;
+  margin: 5px;
+}
+body main .editorChoiseContainer .picturesOfMovies ul li img {
+  width: 140px;
+  height: 250px;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(578%);
+  }
+  100% {
+    transform: translateX(-578%);
+  }
+}
+body main .editorChoiseContainer .picturesOfMovies ul li:nth-child(2) img {
+  height: 247px;
+}
+body main .editorChoiseContainer .picturesOfMovies ul li:nth-child(3) img {
+  height: 249px;
+}
+body main .editorChoiseContainer .picturesOfMovies ul li:nth-child(5) img {
+  height: 251px;
+}
+body main section {
+  display: flex;
+  padding: 20px 0;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+}
+body main section .leftSideContainer {
+  flex: 1;
+  margin: 0 20px;
+}
+body main section .leftSideContainer div h2 {
+  color: black;
+  letter-spacing: 5px;
+}
+body main section .leftSideContainer .forJsDiv,
+body main section .leftSideContainer .filterContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body main section .leftSideContainer .forJsDiv .Movie,
+body main section .leftSideContainer .filterContainer .Movie {
+  margin-right: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: var(--box-shadow);
+  background-color: yellow;
+}
+body main section .leftSideContainer .forJsDiv .Movie img,
+body main section .leftSideContainer .filterContainer .Movie img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body main section .leftSideContainer .forJsDiv .Movie .titleTag,
+body main section .leftSideContainer .filterContainer .Movie .titleTag {
+  font-size: 15px;
+  padding-left: 10px;
+  height: 50px;
+}
+body main section .leftSideContainer .forJsDiv .Movie .moreButton,
+body main section .leftSideContainer .filterContainer .Movie .moreButton {
+  margin: 0 0 10px 10px;
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: var(--writes);
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+body main section .leftSideContainer .forJsDiv .Movie .moreButton:active,
+body main section .leftSideContainer .filterContainer .Movie .moreButton:active {
+  transform: scale(0.95);
+}
+body main section .leftSideContainer .paginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+body main section .leftSideContainer .paginationContainer .paginationButton {
+  border: none;
+  background-color: transparent;
+  padding: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+body main section .leftSideContainer .paginationContainer .paginationButton:active {
+  transform: scale(0.95);
+}
+body main section .leftSideContainer .paginationContainer .paginationNumbers {
+  font-size: 20px;
+  display: flex;
+  gap: 5px;
+}
+body main section .leftSideContainer .paginationContainer .paginationNumbers .pageLi {
+  list-style: none;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body main section .leftSideContainer .paginationContainer .paginationNumbers .pageLi:active {
+  transform: scale(0.95);
+  background-color: var(--writes);
+}
+body main section .leftSideContainer .paginationContainer .paginationNumbers .active {
+  background-color: var(--writes);
+}
+body main section .rightSideContainer {
+  display: none;
+  max-width: 220px;
+}
+body main section .rightSideContainer .movieRobotContainer1 div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+body main section .rightSideContainer .movieRobotContainer1 ul:nth-child(2) li {
+  list-style: none;
+  margin: 5px 0;
+}
+body main section .rightSideContainer .movieRobotContainer1 ul:nth-child(2) li select {
+  width: 90%;
+  font-size: 17px;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+body main section .rightSideContainer .movieRobotContainer1 ul:nth-child(2) .buttonsContainer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+body main section .rightSideContainer .movieRobotContainer1 ul:nth-child(2) .buttonsContainer button {
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: var(--writes);
+  box-shadow: var(--box-shadow);
+}
+body main section .rightSideContainer .movieRobotContainer1 ul:nth-child(2) .buttonsContainer button:active {
+  transform: scale(0.95);
+}
+body main section .rightSideContainer .commentsContainer {
+  width: 90%;
+  border-top: 1px solid black;
+}
+body main section .rightSideContainer .commentsContainer div:first-child {
+  padding-top: 10px;
+}
+body main section .rightSideContainer .commentsContainer div:first-child div:first-child {
+  display: flex;
+  justify-content: start;
+}
+body main section .rightSideContainer .commentsContainer div:first-child div:first-child h3 {
+  font-size: 20px;
+  padding-left: 10px;
+}
+body main section .rightSideContainer .commentsContainer div:first-child div:first-child i {
+  font-size: 20px;
+}
+body main section .rightSideContainer .commentsContainer div:first-child .comments h4 {
+  padding: 10px 0;
+}
+body main section .rightSideContainer .commentsContainer div:first-child .comments button {
+  padding: 2px 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: var(--writes);
+  margin: 10px 0;
+}
+body footer {
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  max-width: 1100px;
+  margin: auto;
+}
+body footer .footerContainer {
+  margin: 0 20px;
+}
+body footer .footerContainer h2 {
+  color: white;
+  padding: 30px 0;
+}
+body footer .footerContainer p {
+  margin: 10px 0;
+  color: white;
+}
+body footer .footerContainer div:nth-child(9) {
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+body footer .footerContainer div:nth-child(9) a {
+  display: inline;
+  text-decoration: none;
+  padding: 40px 0;
+  color: var(--writes);
+  cursor: pointer;
+}
+body footer .footerContainer div:nth-child(9) a:nth-child(2) {
+  color: white;
+}
+body footer .footerContainer div:nth-child(9) a span {
+  color: white;
+}
+
+@media screen and (min-width: 481px) {
+  body header nav {
+    justify-content: space-between;
+  }
+  body header nav .toolsContainer .fa-bars {
+    display: block;
+  }
+  body header .secondNav .movieQuality {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  body header .secondNav .movieQuality .creBtnMdl {
+    display: block;
+  }
+  body header .secondNav .movieQuality div:nth-child(2) {
+    padding: 0;
+    display: flex;
+  }
+  body header .secondNav .movieQuality div:nth-child(2) a {
+    padding: 10px 40px;
+  }
+  body header .secondNav .movieQuality div:nth-child(3) {
+    padding: 0;
+    display: flex;
+  }
+  body header .secondNav .movieQuality div:nth-child(3) a {
+    padding: 10px 40px;
+  }
+  body header .secondNav .creBtnSml {
+    display: none;
+  }
+  body header .secondNav .addButton button {
+    padding: 12px 10px;
+  }
+  body main .movieRobotContainer {
+    display: none;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(350%);
+    }
+    100% {
+      transform: translateX(-350%);
+    }
+  }
+  body main section .leftSideContainer .forJsDiv .Movie,
+  body main section .leftSideContainer .filterContainer .Movie {
+    margin-right: 10px;
+  }
+  body main section .leftSideContainer .forJsDiv .Movie img,
+  body main section .leftSideContainer .filterContainer .Movie img {
+    width: 100%;
+    height: 350px;
+  }
+  body main section .leftSideContainer .forJsDiv .Movie .titleTag,
+  body main section .leftSideContainer .filterContainer .Movie .titleTag {
+    font-size: 20px;
+  }
+  body main section .leftSideContainer .forJsDiv .Movie .moreButton,
+  body main section .leftSideContainer .filterContainer .Movie .moreButton {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 635px) {
+  body header nav .toolsContainer div a:hover {
+    opacity: 0.8;
+  }
+  body header nav .toolsContainer div ul:hover {
+    opacity: 0.8;
+  }
+  body header .secondNav {
+    margin-top: 10px;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body header .secondNav .movieQuality {
+    padding-left: 35px;
+  }
+  body header .secondNav .movieQuality .addButton {
+    padding-right: 10px;
+  }
+  body header .secondNav .movieQuality .addButton button {
+    background-color: var(--writes);
+    color: black;
+  }
+  body header .secondNav .movieQuality .addButton button:active {
+    transform: scale(0.95);
+  }
+  body header .secondNav .movieQuality div:nth-child(2) {
+    padding-left: 10px;
+  }
+  body header .secondNav .movieQuality div:nth-child(2) a:first-child {
+    padding: 0;
+  }
+  body header .secondNav .movieQuality div:nth-child(2) a:nth-child(2) {
+    padding: 0;
+  }
+  body header .secondNav .movieQuality div:nth-child(2) a:hover {
+    opacity: 0.8;
+  }
+  body header .secondNav .movieQuality div:nth-child(3) {
+    padding-left: 20px;
+  }
+  body header .secondNav .movieQuality div:nth-child(3) a:first-child {
+    padding: 0;
+  }
+  body header .secondNav .movieQuality div:nth-child(3) a:nth-child(2) {
+    padding: 0;
+  }
+  body header .secondNav .movieQuality div:nth-child(3) a:hover {
+    opacity: 0.8;
+  }
+  body header .secondNav .searchContainer {
+    min-width: 30%;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(350%);
+    }
+    100% {
+      transform: translateX(-350%);
+    }
+  }
+  body main section .leftSideContainer .forJsDiv,
+  body main section .leftSideContainer .filterContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  body main section .leftSideContainer .forJsDiv .Movie,
+  body main section .leftSideContainer .filterContainer .Movie {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 860px) {
+  body main .mobileApplicationContainer {
+    height: auto;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+  }
+  body main .mobileApplicationContainer button {
+    width: 25%;
+    margin-bottom: 10px;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(280%);
+    }
+    100% {
+      transform: translateX(-280%);
+    }
+  }
+  body main section .leftSideContainer .forJsDiv .Movie img,
+  body main section .leftSideContainer .filterContainer .Movie img {
+    width: 100%;
+    height: 400px;
+  }
+  body main section .leftSideContainer .forJsDiv .Movie .moreButton,
+  body main section .leftSideContainer .filterContainer .Movie .moreButton {
+    padding: 5px 15px;
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 1001px) {
+  body header nav .barsContainer {
+    display: flex;
+    align-items: center;
+  }
+  body header nav .barsContainer .fa-video {
+    display: block;
+    font-size: 20px;
+    color: white;
+  }
+  body header nav .barsContainer h1 {
+    padding-left: 15px;
+  }
+  body header nav .toolsContainer .fa-bars {
+    display: none;
+  }
+  body header nav .toolsContainer div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  body header nav .toolsContainer div a:first-child {
+    background-color: var(--writes);
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  body header nav .toolsContainer div a:first-child:active {
+    transform: scale(0.95);
+  }
+  body header nav .toolsContainer div a:last-child {
+    background-color: var(--writes);
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  body header nav .toolsContainer div a:last-child:active {
+    transform: scale(0.95);
+  }
+  body header nav .toolsContainer div a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  body header nav .toolsContainer div div:nth-child(5) ul {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  body header nav .toolsContainer div div:nth-child(5) ul li {
+    list-style: none;
+    color: white;
+  }
+  body header nav .toolsContainer div div:nth-child(5) ul .fa-greater-than {
+    color: white;
+    padding-bottom: 10px;
+    font-size: 10px;
+  }
+  body header nav .toolsContainer div div:nth-child(6) ul {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  body header nav .toolsContainer div div:nth-child(6) ul li {
+    list-style: none;
+    color: white;
+  }
+  body header nav .toolsContainer div div:nth-child(6) ul .fa-greater-than {
+    color: white;
+    padding-bottom: 10px;
+    font-size: 10px;
+  }
+  body header .secondNav .searchContainer {
+    min-width: 50%;
+  }
+  body main .mobileApplicationContainer button {
+    width: 20%;
+  }
+  body main .editorChoiseContainer {
+    background-color: var(--background-color);
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+  }
+  body main .editorChoiseContainer div:first-child h3 {
+    font-size: 25px;
+  }
+  body main .editorChoiseContainer .picturesOfMovies {
+    width: 100%;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(120%);
+    }
+    100% {
+      transform: translateX(-120%);
+    }
+  }
+  body main section .rightSideContainer {
+    display: block;
+  }
+  body main section .leftSideContainer .forJsDiv,
+  body main section .leftSideContainer .filterContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}/*# sourceMappingURL=movies.css.map */

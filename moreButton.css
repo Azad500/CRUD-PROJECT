@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: rgb(0, 47, 47);
+  --writes: rgb(110, 207, 255);
+  --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body {
+  background-color: rgb(2, 85, 85);
+}
+body header {
+  max-width: 1520px;
+  margin: auto;
+}
+body header i {
+  font-size: 30px;
+  padding: 10px 0 0 15px;
+  color: white;
+  cursor: pointer;
+}
+body main {
+  max-width: 1100px;
+  margin: auto;
+}
+body main .middleElement {
+  margin-top: 30px;
+  width: 100%;
+}
+body main .middleElement .middle {
+  width: 60%;
+  margin: auto;
+  background-color: var(--writes);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+body main .middleElement .middle .nameOfMovies {
+  font-size: 20px;
+  padding: 10px 0;
+  font-family: arial black;
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  animation: rainbow-animation 200s linear infinite;
+}
+@keyframes rainbow-animation {
+  to {
+    background-position: 4500vh;
+  }
+}
+body main section {
+  margin-top: 50px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--background-color);
+  width: 100%;
+}
+body main section .namesnavbar {
+  display: block;
+  padding-bottom: 20px;
+  text-align: center;
+}
+body main section .namesnavbar .namesFilms {
+  padding-left: 5px;
+  color: white;
+  font-size: 25px;
+}
+body main section .namesnavbar .watchMovie {
+  margin: 10px;
+  padding: 5px 3px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--writes);
+  cursor: pointer;
+}
+body main section .namesnavbar .twoButtons button {
+  font-weight: bold;
+  padding: 5px 3px;
+  border-radius: 5px;
+  border: none;
+}
+body main section .namesnavbar .twoButtons .ImdbButton {
+  background-color: rgb(144, 144, 0);
+  color: white;
+}
+body main section .namesnavbar .twoButtons .ImdbButton span {
+  color: black;
+}
+body main section .namesnavbar .twoButtons .qualityButton {
+  background-color: red;
+  color: white;
+}
+body main section .imageAndTextContainer .onlyImage {
+  text-align: center;
+  padding: 10px 0 20px 0;
+}
+body main section .imageAndTextContainer .onlyImage img {
+  width: 250px;
+  height: 380px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+body main section .imageAndTextContainer .onlyImage .theBestContainer {
+  text-align: center;
+  padding: 10px 0;
+}
+body main section .imageAndTextContainer .onlyImage .theBestContainer .theBestButton {
+  padding: 3px 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  box-shadow: var(--box-shadow);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+body main section .imageAndTextContainer .onlyImage .theBestContainer .theBestButton:active {
+  transform: scale(0.95);
+}
+body main section .imageAndTextContainer .moreInformation p {
+  color: white;
+  line-height: 20px;
+  padding: 10px 0;
+}
+body main section .imageAndTextContainer .moreInformation .about {
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+body main section .imageAndTextContainer .moreInformation .deleteEditButtons {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main section .imageAndTextContainer .moreInformation .deleteEditButtons button {
+  padding: 3px 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--writes);
+  box-shadow: var(--box-shadow);
+  font-weight: bold;
+  cursor: pointer;
+}
+body main section .imageAndTextContainer .moreInformation .deleteEditButtons button:active {
+  transform: scale(0.95);
+}
+body main section .imageAndTextContainer .moreInformation .deleteEditButtons .saveContainer {
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+body main section .imageAndTextContainer .moreInformation .deleteEditButtons .saveContainer .saveTextarea {
+  border-radius: 5px;
+  font-size: 15px;
+  border: none;
+}
+body main section .imageAndTextContainer .moreInformation .inputElement {
+  display: none;
+  justify-content: center;
+  gap: 10px;
+}
+body main section .imageAndTextContainer .moreInformation .inputElement input {
+  border-radius: 5px;
+  border: none;
+  padding-left: 5px;
+}
+body main section .imageAndTextContainer .moreInformation .inputElement button {
+  padding: 3px 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--writes);
+  box-shadow: var(--box-shadow);
+  font-weight: bold;
+  cursor: pointer;
+}
+body main section .imageAndTextContainer .moreInformation .inputElement button:active {
+  transform: scale(0.95);
+}
+
+@media screen and (min-width: 768px) {
+  body header i {
+    font-size: 40px;
+  }
+  body main .middleElement .middle .nameOfMovies {
+    font-size: 40px;
+    animation: rainbow-animation 100s linear infinite;
+  }
+  body main section .namesnavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main section .namesnavbar .namesFilms {
+    font-size: 33px;
+  }
+  body main section .namesnavbar .watchMovie {
+    margin: 0;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  body main section .namesnavbar .twoButtons button {
+    padding: 10px;
+    font-size: 17px;
+  }
+  body main section .namesnavbar .twoButtons .ImdbButton {
+    margin-right: 5px;
+  }
+  body main section .imageAndTextContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  body main section .imageAndTextContainer .onlyImage {
+    display: block;
+    padding: 0;
+  }
+  body main section .imageAndTextContainer .deleteEditButtons button {
+    font-size: 17px;
+    padding: 7px 10px;
+  }
+}
+@media screen and (min-width: 1001px) {
+  body header i {
+    font-size: 40px;
+  }
+  body main .middleElement .middle .nameOfMovies {
+    font-size: 50px;
+    animation: rainbow-animation 100s linear infinite;
+  }
+}/*# sourceMappingURL=moreButton.css.map */

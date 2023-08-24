@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1515px;
+  margin: auto;
+  main {
+    background-image: url("https://wallpapers.com/images/hd/the-avengers-vm16xv4a69smdauy.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    .createContainer {
+      border: 1px solid white;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      max-width: 900px;
+      max-height: 800px;
+      .fa-house {
+        font-size: 30px;
+        color: white;
+        margin: 10px;
+        cursor: pointer;
+        &:active {
+          transform: scale(0.95);
+        }
+      }
+      ul {
+        list-style: none;
+        max-width: 600px;
+        margin: auto;
+        h1 {
+          color: white;
+          text-align: center;
+          letter-spacing: 5px;
+          padding: 5px 0;
+        }
+        li {
+          margin: 10px 0;
+          text-align: center;
+          input {
+            width: 80%;
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 7px 0;
+            padding-left: 5px;
+            &::placeholder {
+              text-align: center;
+            }
+          }
+          textarea {
+            width: 80%;
+            border-radius: 5px;
+            padding-left: 5px;
+            font-size: 17px;
+            &::placeholder {
+              font-size: 17px;
+              text-align: center;
+              padding-top: 80px;
+            }
+          }
+          select {
+            width: 80%;
+            font-size: 20px;
+            border-radius: 5px;
+            text-align: center;
+            padding: 7px 0;
+          }
+        }
+        .buttonsContainer {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding-top: 20px;
+          button {
+            padding: 10px;
+            font-size: 17px;
+            font-weight: bold;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(110, 207, 255);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            cursor: pointer;
+            &:active {
+              transform: scale(0.95);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    main {
+      .createContainer {
+        width: 900px;
+        height: 800px;
+        ul {
+          width: 600px;
+          li {
+            input {
+              width: 100%;
+            }
+            textarea {
+              width: 100%;
+            }
+            select {
+              width: 100%;
+            }
+          }
+          .buttonsContainer {
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+}

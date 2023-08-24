@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link rel="stylesheet" href="./movies.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- -------------up nav--------------- -->
+      <nav>
+        <!-- -----------------left nav----------- -->
+        <div class="barsContainer">
+          <i class="fa-solid fa-video fa-beat"></i>
+          <a href="./movies.html"><span>FREE</span> MOVIES</a>
+        </div>
+        <!-- --------------right nav------------------ -->
+        <div class="toolsContainer">
+          <i class="fa-sharp fa-solid fa-bars"></i>
+          <div>
+            <a href="./movies.html">Watch Movies</a>
+            <a href="#" class="theBestButton">The Best</a>
+            <a href="#">Lists</a>
+            <a href="#">Series</a>
+            <div>
+              <ul>
+                <li>Types</li>
+                <i class="fa-solid fa-greater-than fa-rotate-90"></i>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>Preferences</li>
+                <i class="fa-solid fa-greater-than fa-rotate-90"></i>
+              </ul>
+            </div>
+            <a href="#" class="contact">Contact</a>
+            <a class="loginButton" href="login.html" target="_blank">Login</a>
+          </div>
+        </div>
+      </nav>
+      <!-- -------------down nav------------------- -->
+      <div class="secondNav">
+        <div class="movieQuality">
+          <div class="addButton creBtnMdl">
+            <a href="createFilm.html" target="_blank"
+              ><button>Add New Film</button></a
+            >
+          </div>
+          <div>
+            <a class="fourKButton" href="#">4K</a>
+          </div>
+          <div>
+            <a class="HDButton" href="#">HD</a>
+            <a class="NewButton" href="#">NEW</a>
+          </div>
+        </div>
+        <!-- -------------create button------------------- -->
+        <div class="addButton creBtnSml">
+          <a href="createFilm.html" target="_blank"
+            ><button>Add New Film</button></a
+          >
+        </div>
+        <!-- -------------search------------------- -->
+        <div class="searchContainer">
+          <input
+            type="text"
+            name="search"
+            id="searchInput"
+            placeholder="Enter the name of the movie"
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- -----------------------movierobot------------------- -->
+      <div class="movieRobotContainer">
+        <div id="movieRobot">
+          <h3>Movie Robot</h3>
+          <i class="fa-solid fa-greater-than fa-rotate-90"></i>
+        </div>
+        <ul id="ulMovieRobot1">
+          <li class="movieGenreContainer">
+            <select name="movieGenre" id="movieGenre1">
+              <option id="movieGenrE" value="movieGenre">Movie Genre</option>
+              <option id="action" value="Action">Action movies</option>
+              <option id="documentary" value="Documentary">
+                Documentary movies
+              </option>
+              <option id="scienceFiction" value="scienceFiction">
+                Science Fiction movies
+              </option>
+              <option id="drama" value="Drama">Drama movies</option>
+              <option id="fantastic" value="Fantastic">Fantastic movies</option>
+              <option id="thrillers" value="Thrillers">Thrillers</option>
+              <option id="horror" value="Horror">Horror movies</option>
+            </select>
+          </li>
+          <li class="yearsContainer">
+            <select name="years" id="years1">
+              <option id="yearS" value="years">Movie Years</option>
+              <option id="y2023" value="2023">2023</option>
+              <option id="y2022" value="2022">2022</option>
+              <option id="y2021" value="2021">2021</option>
+              <option id="y2020" value="2020">2020</option>
+              <option id="y2019" value="2019">2019</option>
+              <option id="y2018" value="2018">2018</option>
+              <option id="y2017" value="2017">2017</option>
+              <option id="y2016" value="2016">2016</option>
+              <option id="y2015" value="2015">2015</option>
+              <option id="y2014" value="2014">2014</option>
+              <option id="y2013" value="2013">2013</option>
+              <option id="y2012" value="2012">2012</option>
+              <option id="y2011" value="2011">2011</option>
+              <option id="y2010" value="2010">2010</option>
+            </select>
+          </li>
+          <li class="imdbContainer">
+            <select name="imdb" id="imdb1">
+              <option id="imdB" value="imdb">IMDB</option>
+              <option id="m9" value="9">9 and above</option>
+              <option id="m8" value="8">8 and above</option>
+              <option id="m7" value="7">7 and above</option>
+              <option id="m6" value="6">6 and above</option>
+              <option id="m5" value="5">5 and above</option>
+              <option id="m4" value="4">4 and above</option>
+              <option id="m3" value="3">3 and above</option>
+            </select>
+          </li>
+          <li class="movieQualityContainer">
+            <select name="movieQuality" id="movieQuality1">
+              <option id="qualityMovie" value="movieQuality">
+                Movie Quality
+              </option>
+              <option id="HD" value="HD">HD(720p / 1080p)</option>
+              <option id="fourK" value="$K">4K(2160p)</option>
+            </select>
+          </li>
+          <div class="buttonsContainer">
+            <button class="bringTheMovies">Bring the movies</button>
+            <button class="deleteMovies rightDeleteButtons">Delete</button>
+          </div>
+        </ul>
+      </div>
+      <!-- ------------------------mobileApplication--------------- -->
+      <div class="mobileApplicationContainer">
+        <p>
+          Dear FullHDFilzlesene Family,
+          <span>Our Mobile Application is ready to use.</span>
+        </p>
+        <button class="downloadHere">
+          Download Here
+          <div>
+            <i class="fa-brands fa-apple"></i>
+            <i class="fa-brands fa-android"></i>
+          </div>
+        </button>
+      </div>
+      <!-- -------------------Editor's Choice and films------------- -->
+      <div class="editorChoiseContainer">
+        <div>
+          <h3>Editor's Choice</h3>
+        </div>
+        <div class="picturesOfMovies">
+          <ul>
+            <li>
+              <!--1 ---2017-action-englishsubstitles-8.1imdb-4k--- -->
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/3/37/Logan_2017_poster.jpg"
+                alt="logan1"
+              />
+            </li>
+            <li>
+              <!--2 --2023-action-domesticMovie-5.4imdb-HD--- -->
+              <img
+                src="https://hdfilmcehennemi.cx/wp-content/uploads/2023/08/the-channel.jpg"
+                alt="theChannel"
+              />
+            </li>
+            <li>
+              <!--3 --2023-action-domesticMovie-8.1imdb-4k--- -->
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/0/02/Extraction_2_poster.jpg"
+                alt="extraction2"
+              />
+            </li>
+            <li>
+              <!--4 --2021-documentary-domesticMovie-7.1imdb-4k--- -->
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/14_Peaks-_Nothing_Is_Impossible.jpg/220px-14_Peaks-_Nothing_Is_Impossible.jpg"
+                alt="Peaks: Nothing Is Impossible"
+              />
+            </li>
+            <li>
+              <!--5 --2023-documentary-englishsubstitles-6.9imdb-HD--- -->
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BMmM4MGI3N2ItZGFlYi00ZDJmLWE4ZTUtYmFlYzA2NjdlZmFhXkEyXkFqcGdeQXVyMTUyMzg5NzM2._V1_FMjpg_UX1000_.jpg"
+                alt="Cavendish: Never Enough"
+              />
+            </li>
+            <li>
+              <!--6 --2022-documentary-englishsubstitles-9imdb-4K--- -->
+              <img
+                src="https://www.tvguide.com/a/img/catalog/provider/1/2/1-12200322976.jpg"
+                alt="The Redeem Team"
+              />
+            </li>
+            <li>
+              <!--7 ---2020-scienceFiction-domesticMovie-3.8imdb-4k--- -->
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BYjZiMWRkYjgtN2M5Yi00NTdlLWJkMzctNjNhNTcwM2NlNDFmXkEyXkFqcGdeQXVyMzIxNDc0Ng@@._V1_.jpg"
+                alt="dragonSoldiers"
+              />
+            </li>
+            <li>
+              <!--8 ---2015-scienceFiction-englishsubstitles-3.6imdb-HD--- -->
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/The_Black_Demon.jpg/220px-The_Black_Demon.jpg"
+                alt="The Black Demon"
+              />
+            </li>
+            <li>
+              <!--9 ---2021-scienceFiction-domesticMovie-4.4imdb-HD--- -->
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BMDlmN2E1YzktYTQwNy00MzEzLTllNGItNWM2OGY4YjNkNmE0XkEyXkFqcGdeQXVyMTc2ODExOTk@._V1_.jpg"
+                alt="God Raiga vs King Ohga"
+              />
+            </li>
+            <li>
+              <!--10 ---2023-drama-englishsubstitles-7.1imdb-HD--- -->
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BYjgxYTQ5MTUtZTA3ZC00NjY4LTkxMGEtMzZiYTZlZjgwYTdjXkEyXkFqcGdeQXVyNTg5NjQxMjc@._V1_.jpg"
+                alt="Yi qi"
+              />
+            </li>
+            <li>
+              <!--11 ---2018-drama-domesticMovie-6.6imdb-4K--- -->
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNmYzYWMzYTQtNWRiYS00NjIwLWJjMWYtYWMzYzA5NWYwNWIwXkEyXkFqcGdeQXVyMzkyMjQ5OTM@._V1_.jpg"
+                alt="disabledLove"
+              />
+            </li>
+            <li>
+              <!--12 ---2020-drama-englishsubstitles-5.7imdb-HD--- -->
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BM2I0NDU0NzQtNTViMS00NDQxLWIxMzYtZmM0NDQ0YzUyN2I2XkEyXkFqcGdeQXVyNzEzNjU1NDg@._V1_.jpg"
+                alt="Dignitate"
+              />
+            </li>
+            <li>
+              <!--13 ---2019-fantastic-englishsubstitles-5.6imdb-HD--- -->
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BZTJiYWZmNjEtMmU3ZS00ZDE2LWE1NzQtNzQxYjIzZjlhYmM2XkEyXkFqcGdeQXVyMzIwNDY4NDI@._V1_.jpg"
+                alt="Dampyr"
+              />
+            </li>
+            <li>
+              <!--14 ---2023-fantastic-englishsubstitles-6.4imdb-4K--- -->
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNDIwYjVjMDMtOGYxMy00ZTRiLWE0YzktMjIwYmNhOGE4NGQ4XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_FMjpg_UX1000_.jpg"
+                alt="Renfield"
+              />
+            </li>
+            <li>
+              <!--15 ---2016-fantastic-domesticMovies-4.9imdb-HD--- -->
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BZDdlZjIxOTgtMDY2My00MWMzLTg2MGYtZTAzYTg3MjhiMmQyXkEyXkFqcGdeQXVyNzU5MDE0MTE@._V1_FMjpg_UX1000_.jpg"
+                alt="Invitation to a Murder"
+              />
+            </li>
+            <li>
+              <!--16 ---2023-thrillers-domesticMovies-3.5imdb-HD--- -->
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BY2I4ODI5NGYtZjliNC00N2FiLWE0NjMtNmI0NjNmMThiY2FkXkEyXkFqcGdeQXVyMjczODI0Mw@@._V1_.jpg"
+                alt="97 Minutes"
+              />
+            </li>
+            <li>
+              <!--17 ---2019-thrillers-englishsubstitles-6.2imdb-4K--- -->
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNDFhMGJjMjQtODU0OC00NWQ5LWJhNjctOTZiZjA4NTYyZWQyXkEyXkFqcGdeQXVyMjE4NzUxNDA@._V1_.jpg"
+                alt="Daniel Isnt Real"
+              />
+            </li>
+            <li>
+              <!--18 ---2022-thrillers-domesticMovies-8.6imdb-4K--- -->
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BN2M3MTY4MzctZWUwZC00MDE2LWEwMTYtODNiY2MxMmIwMmFkXkEyXkFqcGdeQXVyNDM4OTI5NzM@._V1_.jpg"
+                alt="Santa Muerte"
+              />
+            </li>
+            <li>
+              <!--19 ---2014-thrillers-englishsubstitles-7.4imdb-4K--- -->
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BMWVhZGFmY2ItNGQ5NC00ZTUxLTliOTMtMTExNGVmZjBkNTgwXkEyXkFqcGdeQXVyMTAyNzU4OTky._V1_.jpg"
+                alt="Mile 19"
+              />
+            </li>
+            <li>
+              <!--20 ---2021-horrormovies-englishsubstitles-7.6imdb-HD--- -->
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BMmY0YWNkMjUtYjQxNC00OWIzLThmMTUtOGExNjc3MGQ1YzUwXkEyXkFqcGdeQXVyNzExNjgxNDE@._V1_FMjpg_UX1000_.jpg"
+                alt="The Slayer Chronicles - Volume 1"
+              />
+            </li>
+            <li>
+              <!--21 ---2019-horrormovies-englishsubstitles-7.0imdb-4K--- -->
+              <img
+                src="https://images.moviesanywhere.com/35116d2d70099268f882176dd8a98725/cb65c17e-4dff-4d80-a503-da1c311eddeb.jpg"
+                alt="It Chapter Two"
+              />
+            </li>
+            <li>
+              <!--22 ---2017-horrormovies-englishsubstitles-8.1imdb-4K--- -->
+              <img
+                src="https://tr.web.img2.acsta.net/pictures/17/03/31/08/22/188060.jpg"
+                alt="O It"
+              />
+            </li>
+            <li>
+              <!--23 ---2012-horrormovies-domesticMovies-7.5imdb-4K--- -->
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BODQ5NDQ0MjkwMF5BMl5BanBnXkFtZTcwNDg1OTU4NQ@@._V1_.jpg"
+                alt="Tucker and Dale vs Evil"
+              />
+            </li>
+            <li>
+              <!--24 ---2010-horrormovies-domesticMovies-7.0imdb-HD--- -->
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BMTg4NTYwNDc0MF5BMl5BanBnXkFtZTcwNDg1NzM5NA@@._V1_.jpg"
+                alt="Stake Land"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- --------------------------with JS----------------- -->
+      <section>
+        <div class="leftSideContainer">
+          <div>
+            <h2>Movies</h2>
+          </div>
+          <!-- ---------------------for JS--------------- -->
+          <div class="filterContainer"></div>
+          <div class="forJsDiv"></div>
+          <div class="paginationContainer">
+            <button class="paginationButton" id="previousPage">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <ul class="paginationNumbers"></ul>
+            <button class="paginationButton" id="nextPage">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <!-- ----------------- -->
+        <div class="rightSideContainer">
+          <!-- -----------------------movierobot1------------------- -->
+          <div class="movieRobotContainer1">
+            <div id="movieRobot">
+              <i class="fa-solid fa-film"></i>
+              <h3>Movie Robot</h3>
+            </div>
+            <ul id="ulMovieRobot">
+              <li class="movieGenreContainer">
+                <select name="movieGenre" id="movieGenre">
+                  <option id="movieGenrE" value="">Movie Genre</option>
+                  <option id="action" value="Action">Action movies</option>
+                  <option id="documentary" value="Documentary">
+                    Documentary movies
+                  </option>
+                  <option id="scienceFiction" value="ScienceFiction">
+                    Science Fiction movies
+                  </option>
+                  <option id="drama" value="Drama">Drama movies</option>
+                  <option id="fantastic" value="Fantastic">
+                    Fantastic movies
+                  </option>
+                  <option id="thrillers" value="Thrillers">Thrillers</option>
+                  <option id="horror" value="Horror">Horror movies</option>
+                </select>
+              </li>
+              <li class="yearsContainer">
+                <select name="years" id="yearsContainer1">
+                  <option id="yearS" value="">Movie Years</option>
+                  <option id="y2023" value="2023">2023</option>
+                  <option id="y2022" value="2022">2022</option>
+                  <option id="y2021" value="2021">2021</option>
+                  <option id="y2020" value="2020">2020</option>
+                  <option id="y2019" value="2019">2019</option>
+                  <option id="y2018" value="2018">2018</option>
+                  <option id="y2017" value="2017">2017</option>
+                  <option id="y2016" value="2016">2016</option>
+                  <option id="y2015" value="2015">2015</option>
+                  <option id="y2014" value="2014">2014</option>
+                  <option id="y2013" value="2013">2013</option>
+                  <option id="y2012" value="2012">2012</option>
+                  <option id="y2011" value="2011">2011</option>
+                  <option id="y2010" value="2010">2010</option>
+                </select>
+              </li>
+              <li class="imdbContainer">
+                <select name="imdb" id="imdb">
+                  <option id="imdB" value="">IMDB</option>
+                  <option id="m9" value="9">9 and above</option>
+                  <option id="m8" value="8">8 and above</option>
+                  <option id="m7" value="7">7 and above</option>
+                  <option id="m6" value="6">6 and above</option>
+                  <option id="m5" value="5">5 and above</option>
+                  <option id="m4" value="4">4 and above</option>
+                  <option id="m3" value="3">3 and above</option>
+                </select>
+              </li>
+              <li class="movieQualityContainer">
+                <select name="movieQuality" id="movieQuality">
+                  <option id="qualityMovie" value="">Movie Quality</option>
+                  <option id="HD" value="HD">HD(720p / 1080p)</option>
+                  <option id="fourK" value="4K">4K(2160p)</option>
+                </select>
+              </li>
+              <div class="buttonsContainer">
+                <button class="bringButtonFilter" onclick="bringFunction()">
+                  Bring the movies
+                </button>
+                <button id="rightDeleteButton">Delete</button>
+              </div>
+            </ul>
+          </div>
+          <div class="commentsContainer">
+            <div>
+              <div>
+                <i class="fa-regular fa-comment"></i>
+                <h3>Last Comments</h3>
+              </div>
+              <div class="comments">
+                <h4>Logan 1</h4>
+                <p>It's really perfect. More exciting every minute</p>
+                <button>Azad</button>
+              </div>
+              <hr />
+              <div class="comments">
+                <h4>The Channel</h4>
+                <p>
+                  It was a very beautiful, wonderful movie, thank you to those
+                  who contributed, I would definitely recommend a movie that can
+                  be watched, I would like you to give the movie a chance
+                </p>
+                <button>Ismayil</button>
+              </div>
+              <hr />
+              <div class="comments">
+                <h4>O It</h4>
+                <p>Literally an amazing movie</p>
+                <button>Farid</button>
+              </div>
+              <hr />
+              <div class="comments">
+                <h4>Disabled Love</h4>
+                <p>
+                  It was great, good choice for those who like to watch the
+                  whole family movie in a different way
+                </p>
+                <button>Murad</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ----------------------footer-------------------- -->
+    <footer>
+      <div class="footerContainer">
+        <h2>About</h2>
+        <p>
+          Watching movies once meant waiting for summer cinemas to come to our
+          neighborhood. During this wait, we would talk as a family about which
+          movie is coming and we wouldn't even realize that we didn't even have
+          the chance to choose! However, thanks to the advancing time and
+          technology, we had the luxury of deciding not only the films we were
+          looking for, but also the quality and sound characteristics of the
+          films we were looking for. In other words, instead of watching movies
+          on rough white screens, we can find the opportunity to watch 720p or
+          1080p even HD movies and even with bluray image and sound quality.
+        </p>
+        <p>
+          Thanks to computers and even smart phones, which are now in almost
+          everyone's home, our enjoyment of watching movies has become almost
+          unlimited. By making only a few minor adjustments, whether from
+          computers or smartphones, we have the opportunity to watch movies in
+          HD with the option to watch only foreign movies with English
+          subtitles.
+        </p>
+        <p>
+          So, is this privilege that time brings us limited to this? Of course
+          no! Because in addition to the option to watch movies with English
+          subtitles, we also decide for ourselves what kind of movies we can
+          watch, unlike summer cinemas.
+        </p>
+        <p>
+          With the developing film industry and internet movie broadcasting, the
+          audience can only select the category of the movie they want to watch
+          and reach the best movies in this category within seconds. In other
+          words, the smallest of the house can find beautiful animated movies
+          thanks to the option to watch animated movies, while the youngest of
+          the family can watch action movies that are suitable for him.
+        </p>
+        <p>
+          Of course, with the developing broadcasting network, not only these
+          two categories, but also science fiction lovers can watch the latest
+          and high quality science fiction movies, horror movie fans also have
+          the chance to watch the horror movies they want.
+        </p>
+        <p>
+          As you can see, watching movies in our age does not mean only
+          consenting to the movies offered to us. Watching movies now means
+          watching the movie in full while watching adventure movies, choosing
+          full hd movie quality while watching comedy movies, having the bluray
+          option while watching drama movies, or getting the chance to watch it
+          in 1080p quality while watching thrillers.
+        </p>
+        <p>
+          When you search for English subtitles, it means that the site with the
+          best image quality is at hand.
+        </p>
+        <div>
+          <a href="./movies.html">FREE <span>MOVIES</span></a>
+          <a href="#" class="contact">| Contact</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./movies.js"></script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="movies.html" class="page">
+        <i class="fa-solid fa-house"></i>
+      </a>
+    </header>
+    <main>
+      <div class="leftSideContainer">
+        <!-- ---------------login------------ -->
+        <div class="loginContainer">
+          <h1 class="fa-beat">LOGIN</h1>
+          <form class="inputElements">
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="Please Enter Name"
+              maxlength="10"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Please Enter Password"
+              maxlength="10"
+            />
+            <input
+              type="submit"
+              name="submit"
+              id="submitButton"
+              value="Enter"
+            />
+          </form>
+          <div class="forgotAndSignIn">
+            <button class="signInButton">Sign In</button>
+            <p class="forgotPasswordText">Forgot Password?</p>
+          </div>
+        </div>
+        <!-- ----------------fotgotPassword-------------- -->
+        <div class="forgotPassword">
+          <h2>FORGOT PASSWORD</h2>
+          <form class="inputForgotElements">
+            <div class="selectAndInput">
+              <select name="phone">
+                <option value="+994">+994</option>
+                <option value="+90">+90</option>
+                <option value="+880">+880</option>
+                <option value="+55">+55</option>
+                <option value="+86">+86</option>
+                <option value="+53">+53</option>
+                <option value="+49">+49</option>
+                <option value="+7">+7</option>
+              </select>
+              <input
+                class="numberInput"
+                type="text"
+                name="phoneNumber"
+                placeholder="Please Enter Phone Number"
+                maxlength="15"
+                required
+              />
+            </div>
+            <input
+              class="emailInput"
+              type="email"
+              name="email"
+              placeholder="Please Enter Email"
+            />
+            <input
+              class="sendSubmit"
+              type="submit"
+              name="submit"
+              value="Send Code"
+            />
+          </form>
+        </div>
+        <!-- -------------------caming code-------------- -->
+        <div class="camingCodeContainer">
+          <h2>Please Check Your Phone</h2>
+          <form class="codeInputs">
+            <input type="text" name="first" maxlength="1" />
+            <input type="text" name="second" maxlength="1" />
+            <input type="text" name="third" maxlength="1" />
+            <input type="text" name="fourth" maxlength="1" />
+          </form>
+          <button class="checkButton">Check</button>
+        </div>
+      </div>
+      <!-- --------------------signIn rightSide------------------- -->
+      <div class="rightSideContainer">
+        <div class="signInContainer">
+          <h2 class="signIn fa-beat">SIGN IN</h2>
+          <form class="inputsSignIn">
+            <input
+              class="firstName"
+              type="text"
+              name="firstName"
+              placeholder="Please Enter FirstName"
+              required
+            />
+            <input
+              class="lastName"
+              type="text"
+              name="lastName"
+              placeholder="Please Enter LastName"
+            />
+            <input
+              class="emailForSignIn"
+              type="email"
+              name="emailForSignIn"
+              placeholder="Please Enter Email"
+            />
+            <input
+              class="passwordForSignIn"
+              type="password"
+              name="passwordForSignIn"
+              placeholder="Please Enter Password"
+            />
+            <select class="selectsCountry" name="country">
+              <option value="Select Country">Select Country</option>
+              <option value="Azerbaijan994">Azerbaijan</option>
+              <option value="Turkey90">Turkey</option>
+              <option value="Bangladesh880">Bangladesh</option>
+              <option value="Brazil55">Brazil</option>
+              <option value="China85">China</option>
+              <option value="Cuba53">Cuba</option>
+              <option value="Germany90">Germany</option>
+              <option value="Russia90">Russia</option>
+            </select>
+            <input
+              class="phoneNumberForSignIn"
+              type="text"
+              name="phoneNumber"
+              placeholder="Please Enter Phone Number"
+            />
+            <input
+              class="submitForSignIn"
+              type="submit"
+              name="submitForSignIn"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="./login.js"></script>
+  </body>
+</html>
