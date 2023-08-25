@@ -160,12 +160,10 @@ const theBestButton = document.querySelector(".theBestButton");
 theBestButton.addEventListener("click", async function () {
   try {
     const forJsDiv = document.querySelector(".forJsDiv");
-    const paginationContainer = document.querySelector(".paginationContainer");
     const filterContainer = document.querySelector(".filterContainer");
 
-    if (forJsDiv && paginationContainer) {
+    if (forJsDiv) {
       forJsDiv.remove();
-      paginationContainer.remove();
     }
 
     const response = await fetch("http://localhost:3000/theBest");
@@ -198,13 +196,17 @@ function theBest(best) {
   }
 }
 
-// --------------------filter movie robot---------------
+// --------------------filter up and right movie robot---------------
 
 async function bringFunction() {
   const movieGenre = document.querySelector("#movieGenre").value;
+  const movieGenre1 = document.querySelector("#movieGenre1").value;
   const years = document.querySelector("#yearsContainer1").value;
+  const years1 = document.querySelector("#years1").value;
   const imdb = document.querySelector("#imdb").value;
+  const imdb1 = document.querySelector("#imdb1").value;
   const movieQuality = document.querySelector("#movieQuality").value;
+  const movieQuality1 = document.querySelector("#movieQuality1").value;
 
   const forJsDiv = document.querySelector(".forJsDiv");
   const paginationContainer = document.querySelector(".paginationContainer");
@@ -213,40 +215,46 @@ async function bringFunction() {
     forJsDiv.remove();
     paginationContainer.remove();
   }
-  filtered(movieGenre, years, imdb, movieQuality);
+  filtered(
+    movieGenre,
+    years,
+    imdb,
+    movieQuality,
+    movieGenre1,
+    years1,
+    imdb1,
+    movieQuality1
+  );
 }
 
-async function filtered(movieGenre, years, imdb, movieQuality) {
+async function filtered(
+  movieGenre,
+  years,
+  imdb,
+  movieQuality,
+  movieGenre1,
+  years1,
+  imdb1,
+  movieQuality1
+) {
   try {
     const isMovieGenre = movieGenre ? `Genre=${movieGenre}&` : "";
+    const isMovieGenre1 = movieGenre1 ? `Genre=${movieGenre1}&` : "";
     const isMovieYears = years ? `Years=${years}&` : "";
+    const isMovieYears1 = years1 ? `Years=${years1}&` : "";
     const isMovieIMDB = imdb ? `IMDB=${imdb}&` : "";
-    const isMovieQuality = movieQuality ? `Quality=${movieQuality}` : "";
+    const isMovieIMDB1 = imdb1 ? `IMDB=${imdb1}&` : "";
+    const isMovieQuality = movieQuality ? `Quality=${movieQuality}&` : "";
+    const isMovieQuality1 = movieQuality1 ? `Quality=${movieQuality1}` : "";
 
     const responseGenre = await fetch(
-      `http://localhost:3000/movies?${isMovieGenre}${isMovieYears}${isMovieIMDB}${isMovieQuality}`
+      `http://localhost:3000/movies?${isMovieGenre}${isMovieGenre1}${isMovieYears}${isMovieYears1}${isMovieIMDB}${isMovieIMDB1}${isMovieQuality}${isMovieQuality1}`
     );
     const responseBodyGenre = await responseGenre.json();
-    filterFunction(responseBodyGenre);
+    theBest(responseBodyGenre);
     return responseBodyGenre;
   } catch (error) {
     console.log(error);
-  }
-}
-
-function filterFunction(movies) {
-  if (filterContainer) {
-    let resultHTML = "";
-    movies.forEach(function (movieJs) {
-      resultHTML += `
-      <div class="Movie">
-        <img src="${movieJs.ImageLink}" alt="${movieJs.Name}"/>
-        <h4 class="titleTag">${movieJs.Name}</h4>
-        <a href="moreButton.html?id=${movieJs.id}" target="_blank"><button class="moreButton">More</button></a>
-      </div>
-      `;
-    });
-    filterContainer.innerHTML = resultHTML;
   }
 }
 
@@ -256,11 +264,9 @@ const fourKButton = document.querySelector(".fourKButton");
 fourKButton.addEventListener("click", async function fourKFunction() {
   try {
     const forJsDiv = document.querySelector(".forJsDiv");
-    const paginationContainer = document.querySelector(".paginationContainer");
 
-    if (forJsDiv && paginationContainer) {
+    if (forJsDiv) {
       forJsDiv.remove();
-      paginationContainer.remove();
     }
 
     const response = await fetch("http://localhost:3000/movies?Quality=4K");
@@ -294,11 +300,9 @@ const HDButton = document.querySelector(".HDButton");
 HDButton.addEventListener("click", async function HDButtonFunction() {
   try {
     const forJsDiv = document.querySelector(".forJsDiv");
-    const paginationContainer = document.querySelector(".paginationContainer");
 
-    if (forJsDiv && paginationContainer) {
+    if (forJsDiv) {
       forJsDiv.remove();
-      paginationContainer.remove();
     }
 
     const response = await fetch("http://localhost:3000/movies?Quality=HD");
@@ -314,11 +318,9 @@ const NewButton = document.querySelector(".NewButton");
 NewButton.addEventListener("click", async function NewButtonFunction() {
   try {
     const forJsDiv = document.querySelector(".forJsDiv");
-    const paginationContainer = document.querySelector(".paginationContainer");
 
-    if (forJsDiv && paginationContainer) {
+    if (forJsDiv) {
       forJsDiv.remove();
-      paginationContainer.remove();
     }
 
     const response = await fetch("http://localhost:3000/movies?Years=2023");
@@ -328,3 +330,34 @@ NewButton.addEventListener("click", async function NewButtonFunction() {
     console.log(error);
   }
 });
+
+// --------------------pictures-----------------
+const ulPicturesContainer = document.querySelector(".ulPicturesContainer");
+
+function ulPicturesContainerFunction(pictures) {
+  if (ulPicturesContainer) {
+    let resultHTML = "";
+    pictures.forEach(function (picture) {
+      resultHTML += `
+        <li>
+          <a href=${picture.VideoLink} target="_blank">
+            <img src=${picture.ImageLink} alt=${picture.Name} />
+          </a>
+        </li>
+      `;
+    });
+    ulPicturesContainer.innerHTML = resultHTML;
+  }
+}
+
+async function getPicturesFunction() {
+  try {
+    const response = await fetch("http://localhost:3000/movies");
+    const responseBody = await response.json();
+    ulPicturesContainerFunction(responseBody);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+getPicturesFunction();

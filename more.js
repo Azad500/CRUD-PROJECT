@@ -50,7 +50,7 @@ async function morePage() {
                 id="addTextLg"
                 cols="30"
                 rows="10"
-              ></textarea>
+              >${movieData.About}</textarea>
               <button class="saveButton">Save</button>
             </div>
             <button class="edit">Edit</button>
@@ -63,6 +63,7 @@ async function morePage() {
       </div>
     </section>
         `;
+
     // ------------------delete-button--------------
 
     const deleteButton = document.querySelector(".deleteButton");
@@ -70,14 +71,22 @@ async function morePage() {
 
     deleteButton.addEventListener("click", async function () {
       try {
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const moveId = urlParams.get("id");
-        const response = await fetch(`http://localhost:3000/movies/${moveId}`, {
-          method: "DELETE",
-        });
-        if (response.ok) {
-          window.close();
+        const areYouSure = confirm("Are You Sure?");
+        if (areYouSure) {
+          const queryString = window.location.search;
+          const urlParams = new URLSearchParams(queryString);
+          const moveId = urlParams.get("id");
+          const response = await fetch(
+            `http://localhost:3000/movies/${moveId}`,
+            {
+              method: "DELETE",
+            }
+          );
+          if (areYouSure) {
+            if (response.ok) {
+              window.close();
+            }
+          }
         }
       } catch (error) {
         console.log(error);
@@ -86,11 +95,15 @@ async function morePage() {
 
     // ------------------edit-button--------------
     const editButton = document.querySelector(".edit");
+    const saveButton = document.querySelector(".saveButton");
     const editButtonSecond = document.querySelector(".editButton");
+    const saveTextarea = document.querySelector(".saveTextarea");
+    let aboutParagraph = document.querySelector(".about");
 
     editButton.addEventListener("click", function () {
       const saveCon = document.querySelector(".saveContainer");
       const inputTag = document.querySelector(".inputElement");
+
       if (window.innerWidth > 1001) {
         if (saveCon.style.display === "none" || saveCon.style.display === "") {
           saveCon.style.display = "flex";
@@ -109,8 +122,41 @@ async function morePage() {
         }
       }
     });
+    saveButton.addEventListener("click", saveFetchFunction);
+
+    async function saveFetchFunction() {
+      try {
+        const saveTextareaValue = saveTextarea.value;
+        if (saveTextareaValue) {
+          const response = await fetch(
+            `http://localhost:3000/movies/${moveId}`,
+            {
+              method: "PUT",
+              body: JSON.stringify({
+                Name: movieData.Name,
+                ImageLink: movieData.ImageLink,
+                VideoLink: movieData.VideoLink,
+                Genre: movieData.Genre,
+                Years: movieData.Years,
+                IMDB: movieData.Imdb,
+                Quality: movieData.Quality,
+                About: saveTextareaValue,
+              }),
+              headers: {
+                "Content-Type": "application/json",
+              },
+            }
+          );
+          const responseBody = await response.json();
+          console.log(responseBody);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    }
 
     // ------------------theBest-button--------------
+
     const theBestButton = document.querySelector(".theBestButton");
 
     theBestButton.addEventListener("click", async function () {

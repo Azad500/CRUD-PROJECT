@@ -240,10 +240,10 @@ body {
             list-style: none;
             flex: 0 0 10px;
             margin: 5px;
-
+            cursor: pointer;
             img {
-              width: 140px;
-              height: 250px;
+              width: 180px;
+              height: 270px;
             }
           }
           @keyframes scroll {
@@ -252,21 +252,6 @@ body {
             }
             100% {
               transform: translateX(-578%);
-            }
-          }
-          li:nth-child(2) {
-            img {
-              height: 247px;
-            }
-          }
-          li:nth-child(3) {
-            img {
-              height: 249px;
-            }
-          }
-          li:nth-child(5) {
-            img {
-              height: 251px;
             }
           }
         }
@@ -832,10 +817,10 @@ body {
           ul {
             @keyframes scroll {
               0% {
-                transform: translateX(120%);
+                transform: translateX(150%);
               }
               100% {
-                transform: translateX(-120%);
+                transform: translateX(-150%);
               }
             }
           }

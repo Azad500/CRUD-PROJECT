@@ -91,7 +91,7 @@
         <ul id="ulMovieRobot1">
           <li class="movieGenreContainer">
             <select name="movieGenre" id="movieGenre1">
-              <option id="movieGenrE" value="movieGenre">Movie Genre</option>
+              <option id="movieGenrE" value="">Movie Genre</option>
               <option id="action" value="Action">Action movies</option>
               <option id="documentary" value="Documentary">
                 Documentary movies
@@ -107,7 +107,7 @@
           </li>
           <li class="yearsContainer">
             <select name="years" id="years1">
-              <option id="yearS" value="years">Movie Years</option>
+              <option id="yearS" value="">Movie Years</option>
               <option id="y2023" value="2023">2023</option>
               <option id="y2022" value="2022">2022</option>
               <option id="y2021" value="2021">2021</option>
@@ -126,7 +126,7 @@
           </li>
           <li class="imdbContainer">
             <select name="imdb" id="imdb1">
-              <option id="imdB" value="imdb">IMDB</option>
+              <option id="imdB" value="">IMDB</option>
               <option id="m9" value="9">9 and above</option>
               <option id="m8" value="8">8 and above</option>
               <option id="m7" value="7">7 and above</option>
@@ -138,15 +138,15 @@
           </li>
           <li class="movieQualityContainer">
             <select name="movieQuality" id="movieQuality1">
-              <option id="qualityMovie" value="movieQuality">
-                Movie Quality
-              </option>
+              <option id="qualityMovie" value="">Movie Quality</option>
               <option id="HD" value="HD">HD(720p / 1080p)</option>
               <option id="fourK" value="$K">4K(2160p)</option>
             </select>
           </li>
           <div class="buttonsContainer">
-            <button class="bringTheMovies">Bring the movies</button>
+            <button class="bringTheMovies" onclick="bringFunction()">
+              Bring the movies
+            </button>
             <button class="deleteMovies rightDeleteButtons">Delete</button>
           </div>
         </ul>
@@ -171,176 +171,7 @@
           <h3>Editor's Choice</h3>
         </div>
         <div class="picturesOfMovies">
-          <ul>
-            <li>
-              <!--1 ---2017-action-englishsubstitles-8.1imdb-4k--- -->
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/3/37/Logan_2017_poster.jpg"
-                alt="logan1"
-              />
-            </li>
-            <li>
-              <!--2 --2023-action-domesticMovie-5.4imdb-HD--- -->
-              <img
-                src="https://hdfilmcehennemi.cx/wp-content/uploads/2023/08/the-channel.jpg"
-                alt="theChannel"
-              />
-            </li>
-            <li>
-              <!--3 --2023-action-domesticMovie-8.1imdb-4k--- -->
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/0/02/Extraction_2_poster.jpg"
-                alt="extraction2"
-              />
-            </li>
-            <li>
-              <!--4 --2021-documentary-domesticMovie-7.1imdb-4k--- -->
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/14_Peaks-_Nothing_Is_Impossible.jpg/220px-14_Peaks-_Nothing_Is_Impossible.jpg"
-                alt="Peaks: Nothing Is Impossible"
-              />
-            </li>
-            <li>
-              <!--5 --2023-documentary-englishsubstitles-6.9imdb-HD--- -->
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BMmM4MGI3N2ItZGFlYi00ZDJmLWE4ZTUtYmFlYzA2NjdlZmFhXkEyXkFqcGdeQXVyMTUyMzg5NzM2._V1_FMjpg_UX1000_.jpg"
-                alt="Cavendish: Never Enough"
-              />
-            </li>
-            <li>
-              <!--6 --2022-documentary-englishsubstitles-9imdb-4K--- -->
-              <img
-                src="https://www.tvguide.com/a/img/catalog/provider/1/2/1-12200322976.jpg"
-                alt="The Redeem Team"
-              />
-            </li>
-            <li>
-              <!--7 ---2020-scienceFiction-domesticMovie-3.8imdb-4k--- -->
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BYjZiMWRkYjgtN2M5Yi00NTdlLWJkMzctNjNhNTcwM2NlNDFmXkEyXkFqcGdeQXVyMzIxNDc0Ng@@._V1_.jpg"
-                alt="dragonSoldiers"
-              />
-            </li>
-            <li>
-              <!--8 ---2015-scienceFiction-englishsubstitles-3.6imdb-HD--- -->
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/The_Black_Demon.jpg/220px-The_Black_Demon.jpg"
-                alt="The Black Demon"
-              />
-            </li>
-            <li>
-              <!--9 ---2021-scienceFiction-domesticMovie-4.4imdb-HD--- -->
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BMDlmN2E1YzktYTQwNy00MzEzLTllNGItNWM2OGY4YjNkNmE0XkEyXkFqcGdeQXVyMTc2ODExOTk@._V1_.jpg"
-                alt="God Raiga vs King Ohga"
-              />
-            </li>
-            <li>
-              <!--10 ---2023-drama-englishsubstitles-7.1imdb-HD--- -->
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BYjgxYTQ5MTUtZTA3ZC00NjY4LTkxMGEtMzZiYTZlZjgwYTdjXkEyXkFqcGdeQXVyNTg5NjQxMjc@._V1_.jpg"
-                alt="Yi qi"
-              />
-            </li>
-            <li>
-              <!--11 ---2018-drama-domesticMovie-6.6imdb-4K--- -->
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BNmYzYWMzYTQtNWRiYS00NjIwLWJjMWYtYWMzYzA5NWYwNWIwXkEyXkFqcGdeQXVyMzkyMjQ5OTM@._V1_.jpg"
-                alt="disabledLove"
-              />
-            </li>
-            <li>
-              <!--12 ---2020-drama-englishsubstitles-5.7imdb-HD--- -->
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BM2I0NDU0NzQtNTViMS00NDQxLWIxMzYtZmM0NDQ0YzUyN2I2XkEyXkFqcGdeQXVyNzEzNjU1NDg@._V1_.jpg"
-                alt="Dignitate"
-              />
-            </li>
-            <li>
-              <!--13 ---2019-fantastic-englishsubstitles-5.6imdb-HD--- -->
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BZTJiYWZmNjEtMmU3ZS00ZDE2LWE1NzQtNzQxYjIzZjlhYmM2XkEyXkFqcGdeQXVyMzIwNDY4NDI@._V1_.jpg"
-                alt="Dampyr"
-              />
-            </li>
-            <li>
-              <!--14 ---2023-fantastic-englishsubstitles-6.4imdb-4K--- -->
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BNDIwYjVjMDMtOGYxMy00ZTRiLWE0YzktMjIwYmNhOGE4NGQ4XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_FMjpg_UX1000_.jpg"
-                alt="Renfield"
-              />
-            </li>
-            <li>
-              <!--15 ---2016-fantastic-domesticMovies-4.9imdb-HD--- -->
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BZDdlZjIxOTgtMDY2My00MWMzLTg2MGYtZTAzYTg3MjhiMmQyXkEyXkFqcGdeQXVyNzU5MDE0MTE@._V1_FMjpg_UX1000_.jpg"
-                alt="Invitation to a Murder"
-              />
-            </li>
-            <li>
-              <!--16 ---2023-thrillers-domesticMovies-3.5imdb-HD--- -->
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BY2I4ODI5NGYtZjliNC00N2FiLWE0NjMtNmI0NjNmMThiY2FkXkEyXkFqcGdeQXVyMjczODI0Mw@@._V1_.jpg"
-                alt="97 Minutes"
-              />
-            </li>
-            <li>
-              <!--17 ---2019-thrillers-englishsubstitles-6.2imdb-4K--- -->
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BNDFhMGJjMjQtODU0OC00NWQ5LWJhNjctOTZiZjA4NTYyZWQyXkEyXkFqcGdeQXVyMjE4NzUxNDA@._V1_.jpg"
-                alt="Daniel Isnt Real"
-              />
-            </li>
-            <li>
-              <!--18 ---2022-thrillers-domesticMovies-8.6imdb-4K--- -->
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BN2M3MTY4MzctZWUwZC00MDE2LWEwMTYtODNiY2MxMmIwMmFkXkEyXkFqcGdeQXVyNDM4OTI5NzM@._V1_.jpg"
-                alt="Santa Muerte"
-              />
-            </li>
-            <li>
-              <!--19 ---2014-thrillers-englishsubstitles-7.4imdb-4K--- -->
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BMWVhZGFmY2ItNGQ5NC00ZTUxLTliOTMtMTExNGVmZjBkNTgwXkEyXkFqcGdeQXVyMTAyNzU4OTky._V1_.jpg"
-                alt="Mile 19"
-              />
-            </li>
-            <li>
-              <!--20 ---2021-horrormovies-englishsubstitles-7.6imdb-HD--- -->
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BMmY0YWNkMjUtYjQxNC00OWIzLThmMTUtOGExNjc3MGQ1YzUwXkEyXkFqcGdeQXVyNzExNjgxNDE@._V1_FMjpg_UX1000_.jpg"
-                alt="The Slayer Chronicles - Volume 1"
-              />
-            </li>
-            <li>
-              <!--21 ---2019-horrormovies-englishsubstitles-7.0imdb-4K--- -->
-              <img
-                src="https://images.moviesanywhere.com/35116d2d70099268f882176dd8a98725/cb65c17e-4dff-4d80-a503-da1c311eddeb.jpg"
-                alt="It Chapter Two"
-              />
-            </li>
-            <li>
-              <!--22 ---2017-horrormovies-englishsubstitles-8.1imdb-4K--- -->
-              <img
-                src="https://tr.web.img2.acsta.net/pictures/17/03/31/08/22/188060.jpg"
-                alt="O It"
-              />
-            </li>
-            <li>
-              <!--23 ---2012-horrormovies-domesticMovies-7.5imdb-4K--- -->
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BODQ5NDQ0MjkwMF5BMl5BanBnXkFtZTcwNDg1OTU4NQ@@._V1_.jpg"
-                alt="Tucker and Dale vs Evil"
-              />
-            </li>
-            <li>
-              <!--24 ---2010-horrormovies-domesticMovies-7.0imdb-HD--- -->
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BMTg4NTYwNDc0MF5BMl5BanBnXkFtZTcwNDg1NzM5NA@@._V1_.jpg"
-                alt="Stake Land"
-              />
-            </li>
-          </ul>
+          <ul class="ulPicturesContainer"></ul>
         </div>
       </div>
       <!-- --------------------------with JS----------------- -->

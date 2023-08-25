@@ -17,7 +17,7 @@ deleteButton.addEventListener("click", function () {
   deleteTextarea.value = "";
 });
 // -----------------create-------------
-createButton.addEventListener("click", function () {
+createButton.addEventListener("click", async function () {
   const nameOfTheMovie = document.getElementById("nameOfTheMovie").value;
   const imageLinkOfTheMovie = document.getElementById(
     "imageLinkOfTheMovie"
@@ -31,8 +31,17 @@ createButton.addEventListener("click", function () {
   const movieQuality = document.getElementById("movieQuality").value;
   const aboutTheMovie = document.getElementById("aboutTheMovie").value;
 
-  if (nameOfTheMovie && imageLinkOfTheMovie) {
-    fetchPost(
+  if (
+    nameOfTheMovie &&
+    imageLinkOfTheMovie &&
+    videoLinkOfTheMovie &&
+    movieGenre &&
+    years &&
+    imdb &&
+    movieQuality &&
+    aboutTheMovie
+  ) {
+    await fetchPost(
       nameOfTheMovie,
       imageLinkOfTheMovie,
       videoLinkOfTheMovie,
@@ -42,6 +51,7 @@ createButton.addEventListener("click", function () {
       movieQuality,
       aboutTheMovie
     );
+    window.location.href = "movies.html";
   } else {
     alert("Please Enter Information");
   }

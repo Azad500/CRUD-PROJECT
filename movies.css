@@ -232,10 +232,11 @@ body main .editorChoiseContainer .picturesOfMovies ul li {
   list-style: none;
   flex: 0 0 10px;
   margin: 5px;
+  cursor: pointer;
 }
 body main .editorChoiseContainer .picturesOfMovies ul li img {
-  width: 140px;
-  height: 250px;
+  width: 180px;
+  height: 270px;
 }
 @keyframes scroll {
   0% {
@@ -244,15 +245,6 @@ body main .editorChoiseContainer .picturesOfMovies ul li img {
   100% {
     transform: translateX(-578%);
   }
-}
-body main .editorChoiseContainer .picturesOfMovies ul li:nth-child(2) img {
-  height: 247px;
-}
-body main .editorChoiseContainer .picturesOfMovies ul li:nth-child(3) img {
-  height: 249px;
-}
-body main .editorChoiseContainer .picturesOfMovies ul li:nth-child(5) img {
-  height: 251px;
 }
 body main section {
   display: flex;
@@ -712,10 +704,10 @@ body footer .footerContainer div:nth-child(9) a span {
   }
   @keyframes scroll {
     0% {
-      transform: translateX(120%);
+      transform: translateX(150%);
     }
     100% {
-      transform: translateX(-120%);
+      transform: translateX(-150%);
     }
   }
   body main section .rightSideContainer {
