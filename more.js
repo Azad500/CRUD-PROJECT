@@ -56,7 +56,7 @@ async function morePage() {
             <button class="edit">Edit</button>
           </div>
           <div class="inputElement">
-            <input type="text" name="addTextSml" id="addTextSml" />
+            <input type="text" name="addTextSml" id="addTextSml" value=${movieData.About} />
             <button class="saveButton">Save</button>
           </div>
         </div>
@@ -96,9 +96,7 @@ async function morePage() {
     // ------------------edit-button--------------
     const editButton = document.querySelector(".edit");
     const saveButton = document.querySelector(".saveButton");
-    const editButtonSecond = document.querySelector(".editButton");
     const saveTextarea = document.querySelector(".saveTextarea");
-    let aboutParagraph = document.querySelector(".about");
 
     editButton.addEventListener("click", function () {
       const saveCon = document.querySelector(".saveContainer");

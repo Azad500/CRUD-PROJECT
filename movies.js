@@ -7,18 +7,6 @@ contactElements.forEach(function (contact) {
   });
 });
 
-//-------------movie robot-----------
-const movieRobotContainer = document.querySelector("#movieRobot");
-
-movieRobotContainer.addEventListener("click", function () {
-  const ulElement = document.querySelector("#ulMovieRobot1");
-  if (ulElement.style.display === "none" || ulElement.style.display === "") {
-    ulElement.style.display = "block";
-  } else {
-    ulElement.style.display = "none";
-  }
-});
-
 //--------------movie robot search----------
 const bringButton = document.querySelector(".bringTheMovies");
 
@@ -160,43 +148,29 @@ const theBestButton = document.querySelector(".theBestButton");
 theBestButton.addEventListener("click", async function () {
   try {
     const forJsDiv = document.querySelector(".forJsDiv");
-    const filterContainer = document.querySelector(".filterContainer");
-
-    if (forJsDiv) {
-      forJsDiv.remove();
-    }
-
     const response = await fetch("http://localhost:3000/theBest");
     const bestMovies = await response.json();
     console.log(bestMovies);
     if (bestMovies.length > 0) {
-      filterContainer.innerHTML = "";
-      theBest(bestMovies);
+      forJsDiv.innerHTML = "";
+      updateDom(bestMovies);
     }
   } catch (error) {
     console.log(error);
   }
 });
 
-function theBest(best) {
-  const filterContainer = document.querySelector(".filterContainer");
-
-  if (filterContainer) {
-    let resultHTML = "";
-    best.forEach(function (movieJs) {
-      resultHTML += `
-        <div class="Movie">
-          <img src="${movieJs.ImageLink}" alt="${movieJs.Name}"/>
-          <h4 class="titleTag">${movieJs.Name}</h4>
-          <a href="moreButton.html?id=${movieJs.id}" target="_blank"><button class="moreButton">More</button></a>
-        </div>
-      `;
-    });
-    filterContainer.innerHTML = resultHTML;
-  }
-}
-
 // --------------------filter up and right movie robot---------------
+const movieRobotContainer = document.querySelector("#movieRobot");
+
+movieRobotContainer.addEventListener("click", function () {
+  const ulElement = document.querySelector("#ulMovieRobot1");
+  if (ulElement.style.display === "none" || ulElement.style.display === "") {
+    ulElement.style.display = "block";
+  } else {
+    ulElement.style.display = "none";
+  }
+});
 
 async function bringFunction() {
   const movieGenre = document.querySelector("#movieGenre").value;
@@ -263,52 +237,22 @@ const fourKButton = document.querySelector(".fourKButton");
 
 fourKButton.addEventListener("click", async function fourKFunction() {
   try {
-    const forJsDiv = document.querySelector(".forJsDiv");
-
-    if (forJsDiv) {
-      forJsDiv.remove();
-    }
-
     const response = await fetch("http://localhost:3000/movies?Quality=4K");
     const bestMovies = await response.json();
-    console.log(bestMovies);
-    updateFilterNewQualityFunction(bestMovies);
+    updateDom(bestMovies);
   } catch (error) {
     console.log(error);
   }
 });
-const filterContainer = document.querySelector(".filterContainer");
 
-function updateFilterNewQualityFunction(Quality) {
-  if (filterContainer) {
-    let resultHTML = "";
-    Quality.forEach(function (movieJs) {
-      resultHTML += `
-      <div class="Movie">
-        <img src="${movieJs.ImageLink}" alt="${movieJs.Name}"/>
-        <h4 class="titleTag">${movieJs.Name}</h4>
-        <a href="moreButton.html?id=${movieJs.id}" target="_blank"><button class="moreButton">More</button></a>
-      </div>
-      `;
-    });
-    filterContainer.innerHTML = resultHTML;
-  }
-}
 // --------------------------HD------------------
 const HDButton = document.querySelector(".HDButton");
 
 HDButton.addEventListener("click", async function HDButtonFunction() {
   try {
-    const forJsDiv = document.querySelector(".forJsDiv");
-
-    if (forJsDiv) {
-      forJsDiv.remove();
-    }
-
     const response = await fetch("http://localhost:3000/movies?Quality=HD");
     const bestMovies = await response.json();
-    console.log(bestMovies);
-    updateFilterNewQualityFunction(bestMovies);
+    updateDom(bestMovies);
   } catch (error) {
     console.log(error);
   }
@@ -317,15 +261,9 @@ HDButton.addEventListener("click", async function HDButtonFunction() {
 const NewButton = document.querySelector(".NewButton");
 NewButton.addEventListener("click", async function NewButtonFunction() {
   try {
-    const forJsDiv = document.querySelector(".forJsDiv");
-
-    if (forJsDiv) {
-      forJsDiv.remove();
-    }
-
     const response = await fetch("http://localhost:3000/movies?Years=2023");
     const bestMovies = await response.json();
-    updateFilterNewQualityFunction(bestMovies);
+    updateDom(bestMovies);
   } catch (error) {
     console.log(error);
   }
