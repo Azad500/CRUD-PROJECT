@@ -150,7 +150,6 @@ theBestButton.addEventListener("click", async function () {
     const forJsDiv = document.querySelector(".forJsDiv");
     const response = await fetch("http://localhost:3000/theBest");
     const bestMovies = await response.json();
-    console.log(bestMovies);
     if (bestMovies.length > 0) {
       forJsDiv.innerHTML = "";
       updateDom(bestMovies);
@@ -183,22 +182,19 @@ async function bringFunction() {
   const movieQuality1 = document.querySelector("#movieQuality1").value;
 
   const forJsDiv = document.querySelector(".forJsDiv");
-  const paginationContainer = document.querySelector(".paginationContainer");
 
-  if (forJsDiv && paginationContainer) {
-    forJsDiv.remove();
-    paginationContainer.remove();
+  if (forJsDiv) {
+    filtered(
+      movieGenre,
+      years,
+      imdb,
+      movieQuality,
+      movieGenre1,
+      years1,
+      imdb1,
+      movieQuality1
+    );
   }
-  filtered(
-    movieGenre,
-    years,
-    imdb,
-    movieQuality,
-    movieGenre1,
-    years1,
-    imdb1,
-    movieQuality1
-  );
 }
 
 async function filtered(
@@ -225,7 +221,7 @@ async function filtered(
       `http://localhost:3000/movies?${isMovieGenre}${isMovieGenre1}${isMovieYears}${isMovieYears1}${isMovieIMDB}${isMovieIMDB1}${isMovieQuality}${isMovieQuality1}`
     );
     const responseBodyGenre = await responseGenre.json();
-    theBest(responseBodyGenre);
+    updateDom(responseBodyGenre);
     return responseBodyGenre;
   } catch (error) {
     console.log(error);
