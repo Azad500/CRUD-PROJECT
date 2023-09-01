@@ -633,6 +633,11 @@ body footer .footerContainer div:nth-child(9) a span {
     align-items: center;
     gap: 20px;
   }
+  body header nav .toolsContainer div a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
   body header nav .toolsContainer div a:first-child {
     background-color: var(--writes);
     color: black;
@@ -651,38 +656,48 @@ body footer .footerContainer div:nth-child(9) a span {
   body header nav .toolsContainer div a:last-child:active {
     transform: scale(0.95);
   }
-  body header nav .toolsContainer div a {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-  }
-  body header nav .toolsContainer div div:nth-child(5) ul {
+  body header nav .toolsContainer div .dropdown ul {
     display: flex;
     align-items: center;
+    position: relative;
     cursor: pointer;
+    padding: 10px 0;
   }
-  body header nav .toolsContainer div div:nth-child(5) ul li {
+  body header nav .toolsContainer div .dropdown ul li {
     list-style: none;
     color: white;
   }
-  body header nav .toolsContainer div div:nth-child(5) ul .fa-greater-than {
+  body header nav .toolsContainer div .dropdown ul .fa-greater-than {
     color: white;
     padding-bottom: 10px;
     font-size: 10px;
   }
-  body header nav .toolsContainer div div:nth-child(6) ul {
-    display: flex;
-    align-items: center;
+  body header nav .toolsContainer div .dropdown .dropdown-content {
+    margin-top: 300px;
+    position: absolute;
+    display: none;
+    background-color: white;
+    z-index: 1;
+    border-radius: 10px;
+  }
+  body header nav .toolsContainer div .dropdownItem {
+    padding: 10px;
     cursor: pointer;
   }
-  body header nav .toolsContainer div div:nth-child(6) ul li {
-    list-style: none;
+  body header nav .toolsContainer div .dropdownItem:active {
+    transform: scale(0.95);
+  }
+  body header nav .toolsContainer div .dropdownItem:hover {
+    background-color: gray;
     color: white;
   }
-  body header nav .toolsContainer div div:nth-child(6) ul .fa-greater-than {
-    color: white;
-    padding-bottom: 10px;
-    font-size: 10px;
+  body header nav .toolsContainer div .dropdownItem:hover:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  body header nav .toolsContainer div .dropdownItem:hover:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
   body header .secondNav .searchContainer {
     min-width: 50%;

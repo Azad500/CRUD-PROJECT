@@ -14,6 +14,45 @@ downloadButtons.addEventListener("click", function () {
   alert("Your internet is weak");
 });
 
+// --------------------Types---------------
+const dropBtn = document.querySelector(".dropdown");
+
+dropBtn.addEventListener("click", function () {
+  const dropdownContent = document.querySelector(".dropdown-content");
+  if (
+    dropdownContent.style.display === "none" ||
+    dropdownContent.style.display === ""
+  ) {
+    dropdownContent.style.display = "block";
+  } else {
+    dropdownContent.style.display = "none";
+  }
+});
+
+function addClickListener(elementSelector, genre) {
+  const element = document.querySelector(elementSelector);
+
+  element.addEventListener("click", async function () {
+    try {
+      const response = await fetch(
+        `http://localhost:3000/movies?Genre=${genre}`
+      );
+      const responseBody = await response.json();
+      updateDom(responseBody);
+    } catch (error) {
+      console.error(error);
+    }
+  });
+}
+
+addClickListener(".actItem", "Action");
+addClickListener(".docItem", "Documentary");
+addClickListener(".sciItem", "Science Fiction");
+addClickListener(".draItem", "Drama");
+addClickListener(".fanItem", "Fantastic");
+addClickListener(".ThrItem", "Thrillers");
+addClickListener(".horItem", "Horror");
+
 // ------------------up movie robot---------------
 const rightDeleteButtons = document.querySelector(".rightDeleteButtons");
 
