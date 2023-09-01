@@ -7,9 +7,6 @@ contactElements.forEach(function (contact) {
   });
 });
 
-//--------------movie robot search----------
-const bringButton = document.querySelector(".bringTheMovies");
-
 // ------------downloadhere----------
 const downloadButtons = document.querySelector(".downloadHere");
 

@@ -1,19 +1,258 @@
 {
-  "posts": [
+  "movies": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "Name": "Logan 1",
+      "ImageLink": "https://upload.wikimedia.org/wikipedia/en/3/37/Logan_2017_poster.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/logan-izle-fhd5/",
+      "Genre": "Action",
+      "Years": "2017",
+      "IMDB": "8",
+      "Quality": "4K",
+      "About": "Logan, New Wolverine 3 Coming Soon! Logan and Professor Charles Xavier must adjust to the loss that comes as the X-Men are led by Nathaniel Essex. Meanwhile, Logan's healing power weakens and Professor Charles Xavier's Alzheimer's disease causes him to forget everything. After all this, Logan must defeat his Nathaniel Essex. However, he will do this not alone, but with the little Wolverine, a clone like himself.",
+      "id": 10
+    },
+    {
+      "Name": "Disabled Love",
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BNmYzYWMzYTQtNWRiYS00NjIwLWJjMWYtYWMzYzA5NWYwNWIwXkEyXkFqcGdeQXVyMzkyMjQ5OTM@._V1_.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/engelli-ask/",
+      "Genre": "Drama",
+      "Years": "2018",
+      "Quality": "4K",
+      "About": "Ayşe is a devoted and modern girl from a wealthy family and is studying cinema at university. Ayşe, who has had diabetes since childhood, was raised exactly by her parents. Cenk and Fatih, who love Ayşe, are two young men...Ayşe is a lively and energetic girl. Although She has grown up with difficulties, she has always managed to be positive and strong. She can sometimes have difficulties, as she needs insulin injections to go to school, work, and do all the other daily activities. However, this does not negatively affect his life. ",
+      "id": 12
+    },
+    {
+      "Name": "Dignitate",
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BM2I0NDU0NzQtNTViMS00NDQxLWIxMzYtZmM0NDQ0YzUyN2I2XkEyXkFqcGdeQXVyNzEzNjU1NDg@._V1_.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/dignitate/",
+      "Genre": "Drama",
+      "Years": "2020",
+      "IMDB": "5",
+      "Quality": "HD",
+      "About": "Alfi (Al Ghazali) meets Alana (Caitlin Halderman), a new student at school. It turns out that they are in the same class and sitting next to each other. Instead of agreeing, they often argue because they're both stubborn.Alfi is an intelligent and popular student. Everyone loves him and he stands out among his friends. Alana is a quiet and shy girl. Coming to a new environment makes him a little nervous, so he is not very social.At first, Alfi and Alana treat each other like enemies. They always contradict each other and argue over little things. In the classroom, there is a silent war between their teachers even when they are teaching. Their teachers warn them often, but the situation never changes.",
+      "id": 13
+    },
+    {
+      "Name": "Dampyr",
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BZTJiYWZmNjEtMmU3ZS00ZDE2LWE1NzQtNzQxYjIzZjlhYmM2XkEyXkFqcGdeQXVyMzIwNDY4NDI@._V1_.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/dampyr/",
+      "Genre": "Fantastic",
+      "Years": "2023",
+      "IMDB": "6",
+      "Quality": "4K",
+      "About": "Harlan Draka, as a Dampyr, is a character living in a dark and mysterious world. Although he knows that he is half human, half vampire, he is unaware of his true nature. However, he is approaching an important turning point in his life. Because in the near future, he will have to use his powers to fight the Night Lord, a terrifying being.Harlan lives in a situation caught between human and vampire. The human side gives him the desire to lead a normal life and the ability to understand people's feelings, while the vampire side has a fascinating power and ability to understand the nature of vampires. However, it will be a difficult process to strike a balance between these two parties and accept who they are.",
+      "id": 14
+    },
+    {
+      "Name": "Renfield",
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BNDIwYjVjMDMtOGYxMy00ZTRiLWE0YzktMjIwYmNhOGE4NGQ4XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_FMjpg_UX1000_.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/renfield/",
+      "Genre": "Fantastic",
+      "Years": "2023",
+      "IMDB": "6",
+      "Quality": "4K",
+      "About": "In this contemporary take on Dracula's (Nicolas Cage) classic horror story, the story focuses on the plight of his utterly loyal servant, Renfield (Nicholas Hoult). A reluctant accomplice to the whims of his narcissistic master, Renfield is tasked with reassuring victims for his insatiable appetite, no matter how immoral his act. However, after centuries of subjugation, Renfield longs to break free from the Prince of Darkness' shadow and discover if there is any life beyond his interdependence. He must find a way to break the ties that bind him to his beast master and lead to personal salvation.",
+      "id": 15
+    },
+    {
+      "Name": "Invitation to a Murder",
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BZDdlZjIxOTgtMDY2My00MWMzLTg2MGYtZTAzYTg3MjhiMmQyXkEyXkFqcGdeQXVyNzU5MDE0MTE@._V1_FMjpg_UX1000_.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/invitation-to-a-murder-izle-10/",
+      "Genre": "Fantastic",
+      "Years": "2016",
+      "IMDB": "4",
+      "Quality": "HD",
+      "About": "In 1934, a group of strangers, including Miranda Green, are invited to a secluded island mansion owned by enigmatic billionaire Lewis Findley. The invitation evokes whispers of curiosity and anticipation, but they do not know that this seemingly innocent meeting is the key to a maze-like puzzle in which secrets are intertwined with a sense of impending doom. As the weekend progresses, the mansion sets the stage for a thrilling game of intrigue as each guest uncovers fragments of their shared past and sinister underlying causes. With each passing moment, mysterious clues, hidden agendas, vengeful desires and long-buried secrets meticulously planted throughout the property begin to form a haunting weave.",
+      "id": 16
+    },
+    {
+      "Name": "97 Minutes",
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BY2I4ODI5NGYtZjliNC00N2FiLWE0NjMtNmI0NjNmMThiY2FkXkEyXkFqcGdeQXVyMjczODI0Mw@@._V1_.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/97-minutes/",
+      "Genre": "Thrillers",
+      "Years": "2023",
+      "IMDB": "3",
+      "Quality": "HD",
+      "About": "A hijacked 767 aircraft, running out of fuel, will crash in just 97 minutes. Despite the determination of NSA Deputy Toyin, who is aware of this critical situation, NSA Director Hawkins begins preparations for the downing of the plane before it creates a disaster on the ground. However, as a result of this decision, the fate of the innocent passengers is left in the hands of Tyler, who was on the plane and allegedly a pirate.",
+      "id": 17
+    },
+    {
+      "Name": "Daniel Isnt Real",
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BNDFhMGJjMjQtODU0OC00NWQ5LWJhNjctOTZiZjA4NTYyZWQyXkEyXkFqcGdeQXVyMjE4NzUxNDA@._V1_.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/daniel-isnt-real-izle-fhd3/",
+      "Genre": "Thrillers",
+      "Years": "2019",
+      "IMDB": "6",
+      "Quality": "4K",
+      "About": "Filled with determination and courage, Luke made a life-changing choice to leave the comfort of his mother's home and embark on a journey of liberation. Little had he anticipated the thorny web of difficulties that awaited him on this path. With his innate social awkwardness and multiple traumas overwhelming him, Luke has found solace in the company of an old, beloved friend from his childhood days, his imaginary friend Daniel, who has now grown into a confident and manipulative young man. By a twist of fate, Daniel stepped forward to offer Luke his unwavering support, but Luke didn't know he had a shadow of a shadow of his intentions.",
+      "id": 18
+    },
+    {
+      "Name": "Santa Muerte",
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BN2M3MTY4MzctZWUwZC00MDE2LWEwMTYtODNiY2MxMmIwMmFkXkEyXkFqcGdeQXVyNDM4OTI5NzM@._V1_.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/santa-muerte-fhd4/",
+      "Genre": "Thrillers",
+      "Years": "2022",
+      "IMDB": "8",
+      "Quality": "4K",
+      "About": "Daniel Ramirez is a name that took the Mexican Drug Cartel and brought it to the top. But this cartel is known for its ruthlessness, and so Daniel Ramirez is getting more and more brutal to advance this criminal network. Daniel Ramirez, who realized much later that it was not easy to stay big in this crime network, must now keep his name high and enter a silent war with his own conscience. Let's see if Daniel Ramirez manages to keep this criminal network at the top, and will he be able to achieve the same success in calming his conscience?",
+      "id": 19
+    },
+    {
+      "Name": "Mile 19",
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BMWVhZGFmY2ItNGQ5NC00ZTUxLTliOTMtMTExNGVmZjBkNTgwXkEyXkFqcGdeQXVyMTAyNzU4OTky._V1_.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/mile-19/",
+      "Genre": "Thrillers",
+      "Years": "2014",
+      "IMDB": "7",
+      "Quality": "4K",
+      "About": "One day, a young woman named Linda, who goes on a business trip with some of her friends at the company she works for, is still unaware of the events that will happen to her on this journey that she thinks is extremely important for her career. Shortly after her departure, Linda stumbles upon a car stopping by the side of a deserted highway, and as soon as she sees the stranger standing in front of this car, she feels that she must help her. Although her friend next to her says they should not do this, Linda, who decides to help this stranger by turning the car away, will soon encounter some events that will not even cross her mind. Linda, who regrets listening to her inner voice, has embarked on an irreversible path.",
+      "id": 20
+    },
+    {
+      "Name": "The Slayer Chronicles - Volume 1",
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BMmY0YWNkMjUtYjQxNC00OWIzLThmMTUtOGExNjc3MGQ1YzUwXkEyXkFqcGdeQXVyNzExNjgxNDE@._V1_FMjpg_UX1000_.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/the-slayer-chronicles-volume-1-fhd/",
+      "Genre": "Horror",
+      "Years": "2021",
+      "IMDB": "7",
+      "Quality": "HD",
+      "About": "Raven is an ordinary teenage girl who suddenly finds herself following in the footsteps of her working mother. She fights against the dark forces of evil and leads her allies in a war against an evil demon that threatens to unleash her legion of bloodsuckers on Earth. His fate was determined the moment he was born. His destiny is to keep fighting. Hunter. Raven Cross takes a supernatural crash course when she discovers that she is a vampire hunter and a member of the Lightworkers Council tasked with protecting the council.",
+      "id": 21
+    },
+    {
+      "Name": "It Chapter Two",
+      "ImageLink": "https://images.moviesanywhere.com/35116d2d70099268f882176dd8a98725/cb65c17e-4dff-4d80-a503-da1c311eddeb.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/o-bolum-2-film-izle-fhd5/",
+      "Genre": "Horror",
+      "Years": "2019",
+      "IMDB": "7",
+      "Quality": "4K",
+      "About": "It's been 27 years since the Losers Club teamed up and defeated Pennywise. However, the past 27 years have dragged these friends into different lives and have turned into completely different personalities. But despite all these years, the demon, burning with vengeance, did not sleep and resurfaced in Derry once again. Children are starting to disappear again in this small town and this makes Mike, the only survivor of the old group in the small town of Derry, suspicious and Mike immediately calls the old group one by one to tell them that something is wrong and call them for help. The reunited group must put aside the vestiges of the past and fight Pennywise again!",
+      "id": 22
+    },
+    {
+      "Name": "O - It",
+      "ImageLink": "https://tr.web.img2.acsta.net/pictures/17/03/31/08/22/188060.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/o-izle-1/",
+      "Genre": "Horror",
+      "Years": "2017",
+      "IMDB": "8",
+      "Quality": "4K",
+      "About": "The group of friends living in a small town and studying together usually spend all their time together after the school break. According to their other friends, these seven friends, who are not very active, are not very active, deal with life in general with family problems, and on the other hand, who are exposed to the emotionalities of adolescence, a clown named Pennywise will haunt these friends and cause them to experience terrifying moments that will scare everyone. Watch O - it - Es 2017 full hd movie",
+      "id": 23
+    },
+    {
+      "Name": "Tucker and Dale vs Evil",
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BODQ5NDQ0MjkwMF5BMl5BanBnXkFtZTcwNDg1OTU4NQ@@._V1_.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/tucker-and-dale-vs-evil-izle-1/",
+      "Genre": "Horror",
+      "Years": "2012",
+      "IMDB": "7",
+      "Quality": "4K",
+      "About": "Tucker And Dale Vs Evil, made in Canada, USA, India and England, received 9 awards and 13 nominations. has received. The Comedy, Horror genre film was released on January 22, 2010 (USA) and is Filmed in Alberta, Canada. A big fire will break out in a hut built in the middle of the forest surrounded by forests, and then the university students there will have to kill to survive. Tucker And Dale Vs Evil 2010 Watch Movies in 1080p",
+      "id": 24
+    },
+    {
+      "Name": "Need for Speed",
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BMTQ3ODY4NzYzOF5BMl5BanBnXkFtZTgwNjI3OTE4MDE@._V1_.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/need-for-speed-izle/",
+      "Genre": "Action",
+      "Years": "2014",
+      "Quality": "4K",
+      "About": "Tobey Marshall is doing his best to pay off the debts left on them by the death of his father. Tobey, who spends most of the day repairing cars, participates in underground auto races on weekends. As his passion for cars and adrenaline-packed racing grows with each passing day, his nemesis Dino Brewster makes an unexpected offer. Dino, a rich man, asks Tobey to build the world's fastest and most equipped Mustang. Tobey, on the other hand, thinks that he can get the necessary money by accepting this offer.When Tobey accepts this offer, a big change begins in his life. Now he will not only work in his own auto repair shop, but will also go into the process of building the world's fastest car, at the request of Dino Brewster. In this process, while Tobey deepened his passion for car racing, he also assumed a great responsibility.",
+      "id": 25
+    },
+    {
+      "Name": "DC Down",
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BYWYyZGQ3YmYtYjgxOC00ZGZkLTkxMmUtOGFkMjJlNjFjNmNhXkEyXkFqcGdeQXVyMzUxMTg1NTI@._V1_FMjpg_UX1000_.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/dc-down/",
+      "Genre": "Action",
+      "Years": "2023",
+      "IMDB": "4",
+      "Quality": "HD",
+      "About": "After an earthquake shook Washington D.C., Army Forces race the clock to save the president while he's trapped under rubble. A dark conspiracy is also emerging that aims to turn this disaster into an opportunity.Oh dear Washington D.C. was shaken by the earthquake that took place in our city. Think about it, after this disaster that struck fear in our hearts, our heroes, the Army Forces, took the stage quickly. What were their duties? It was racing against time to save our president where he was stuck under the rubble. Isn't it exciting?",
+      "id": 26
     }
   ],
-  "comments": [
+  "theBest": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "ImageLink": "https://upload.wikimedia.org/wikipedia/en/0/02/Extraction_2_poster.jpg",
+      "Name": "Extraction 2",
+      "id": 1
+    },
+    {
+      "ImageLink": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/14_Peaks-_Nothing_Is_Impossible.jpg/220px-14_Peaks-_Nothing_Is_Impossible.jpg",
+      "Name": "Peaks: Nothing Is Impossible",
+      "id": 2
+    },
+    {
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BMTg4NTYwNDc0MF5BMl5BanBnXkFtZTcwNDg1NzM5NA@@._V1_.jpg",
+      "Name": "Stake Land",
+      "id": 3
+    },
+    {
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BYjZiMWRkYjgtN2M5Yi00NTdlLWJkMzctNjNhNTcwM2NlNDFmXkEyXkFqcGdeQXVyMzIxNDc0Ng@@._V1_.jpg",
+      "Name": "Dragon Soldiers",
+      "id": 4
+    },
+    {
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BMmM4MGI3N2ItZGFlYi00ZDJmLWE4ZTUtYmFlYzA2NjdlZmFhXkEyXkFqcGdeQXVyMTUyMzg5NzM2._V1_FMjpg_UX1000_.jpg",
+      "Name": "Cavendish: Never Enough",
+      "id": 5
+    },
+    {
+      "ImageLink": "https://www.tvguide.com/a/img/catalog/provider/1/2/1-12200322976.jpg",
+      "Name": "The Redeem Team",
+      "id": 6
+    },
+    {
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BM2I0NDU0NzQtNTViMS00NDQxLWIxMzYtZmM0NDQ0YzUyN2I2XkEyXkFqcGdeQXVyNzEzNjU1NDg@._V1_.jpg",
+      "Name": "Dignitate",
+      "id": 7
+    },
+    {
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BY2I4ODI5NGYtZjliNC00N2FiLWE0NjMtNmI0NjNmMThiY2FkXkEyXkFqcGdeQXVyMjczODI0Mw@@._V1_.jpg",
+      "Name": "97 Minutes",
+      "id": 8
+    },
+    {
+      "ImageLink": "https://upload.wikimedia.org/wikipedia/en/3/37/Logan_2017_poster.jpg",
+      "Name": "Logan 1",
+      "id": 9
+    },
+    {
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BN2M3MTY4MzctZWUwZC00MDE2LWEwMTYtODNiY2MxMmIwMmFkXkEyXkFqcGdeQXVyNDM4OTI5NzM@._V1_.jpg",
+      "Name": "Santa Muerte",
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BMTQ3ODY4NzYzOF5BMl5BanBnXkFtZTgwNjI3OTE4MDE@._V1_.jpg",
+      "Name": "Need for Speed",
+      "id": 12
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "users": [
+    {
+      "FirstName": "Azad",
+      "LastName": "Mirzazada",
+      "Email": "azad.mirzazada95@gmail.com",
+      "Password": "1234567890",
+      "Country": "Azerbaijan994",
+      "PNumber": "070-842-40-43",
+      "id": 1
+    },
+    {
+      "FirstName": "Ismayil",
+      "LastName": "Suleymanov",
+      "Email": "suleymanov300@gmail.com",
+      "Password": "123456789",
+      "Country": "Azerbaijan994",
+      "PNumber": "ismayil300",
+      "id": 2
+    }
+  ]
 }
