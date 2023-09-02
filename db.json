@@ -175,14 +175,14 @@
       "id": 26
     },
     {
-      "Name": "azad",
-      "ImageLink": "azad",
-      "VideoLink": "azad",
+      "Name": "Meg 2",
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BMTM2NTU1ZTktNjc4YS00NjNhLWE4NmYtOTM2YjFjOGUzNmYzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg",
+      "VideoLink": "https://www.fullhdfilmizlesene.pw/film/meg-2-cukur/",
       "Genre": "Action",
       "Years": "2023",
-      "IMDB": "9",
+      "IMDB": "5",
       "Quality": "HD",
-      "About": "azad",
+      "About": "In this adventure in the forest, each member of the team tries to find solutions by coming together with their different skills and knowledge. Each member of the team, who gives strength and hope to each other, pushes their own limits and gains incredible self-confidence. However, the predators waiting in front of them do not sit idly by. Using his intelligence, he tracks down the team and attacks them at every opportunity.",
       "TheBest": "",
       "id": 27
     }
@@ -245,6 +245,11 @@
       "ImageLink": "https://m.media-amazon.com/images/M/MV5BMTQ3ODY4NzYzOF5BMl5BanBnXkFtZTgwNjI3OTE4MDE@._V1_.jpg",
       "Name": "Need for Speed",
       "id": 12
+    },
+    {
+      "ImageLink": "https://m.media-amazon.com/images/M/MV5BZDdlZjIxOTgtMDY2My00MWMzLTg2MGYtZTAzYTg3MjhiMmQyXkEyXkFqcGdeQXVyNzU5MDE0MTE@._V1_FMjpg_UX1000_.jpg",
+      "Name": "Invitation to a Murder",
+      "id": 13
     }
   ],
   "users": [

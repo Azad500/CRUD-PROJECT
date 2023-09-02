@@ -94,26 +94,28 @@ function updateDom(movies) {
 let currentPage = 1;
 let totalPages = 1;
 
-async function fetchCards(page) {
-  try {
-    const response = await fetch(
-      `http://localhost:3000/movies?_page=${page}&_limit=6`
-    );
-    const responseBody = await response.json();
-    totalPages = Math.ceil(response.headers.get("X-Total-Count") / 6);
-    currentPage = page;
-    paginationButtons(totalPages);
-    updateDom(responseBody);
-  } catch (error) {
-    console.log(error);
-  }
-}
-fetchCards(currentPage);
+// async function fetchCards(page) {
+//   try {
+//     const response = await fetch(
+//       `http://localhost:3000/movies?_page=${page}&_limit=6`
+//     );
+//     const responseBody = await response.json();
+//     totalPages = Math.ceil(response.headers.get("X-Total-Count") / 6);
+//     currentPage = page;
+//     paginationButtons(totalPages);
+//     updateDom(responseBody);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+bringFunction(currentPage);
 
 function setActivePages() {
   const pageElements = document.querySelectorAll(".pageLi");
   if (pageElements.length) {
     pageElements.forEach(function (pageElement, index) {
+      // console.log(index + 1);
+      // console.log("current - ", currentPage);
       if (index + 1 === currentPage) {
         pageElement.classList.add("active");
       } else {
@@ -125,13 +127,13 @@ function setActivePages() {
 
 document.getElementById("previousPage").addEventListener("click", function () {
   if (currentPage > 1) {
-    fetchCards(currentPage - 1);
+    bringFunction(currentPage - 1);
   }
 });
 
 document.getElementById("nextPage").addEventListener("click", function () {
   if (currentPage < totalPages) {
-    fetchCards(currentPage + 1);
+    bringFunction(currentPage + 1);
   }
 });
 
@@ -143,7 +145,7 @@ function paginationButtons(totalPages) {
     liElemets.classList.add("pageLi");
     liElemets.textContent = i; //sehifelerin reqemlerini sehifede yazir
     liElemets.addEventListener("click", function () {
-      fetchCards(i);
+      bringFunction(i);
     });
     paginationNumbers.appendChild(liElemets);
   }
@@ -168,7 +170,7 @@ searchButton.addEventListener("click", async function fetchAndFilterMovies() {
       updateDom(responseBody);
       paginationContainer.style.display = "none";
     } else {
-      fetchCards();
+      bringFunction(1);
       paginationContainer.style.display = "flex";
     }
     document.querySelector("#searchInput").value = "";
@@ -207,7 +209,7 @@ movieRobotContainer.addEventListener("click", function () {
   }
 });
 
-async function bringFunction() {
+function bringFunction(page) {
   const movieGenre = document.querySelector("#movieGenre").value;
   const movieGenre1 = document.querySelector("#movieGenre1").value;
   const years = document.querySelector("#yearsContainer1").value;
@@ -221,6 +223,7 @@ async function bringFunction() {
 
   if (forJsDiv) {
     filtered(
+      page,
       movieGenre,
       years,
       imdb,
@@ -234,6 +237,7 @@ async function bringFunction() {
 }
 
 async function filtered(
+  page,
   movieGenre,
   years,
   imdb,
@@ -254,9 +258,12 @@ async function filtered(
     const isMovieQuality1 = movieQuality1 ? `Quality=${movieQuality1}` : "";
 
     const responseGenre = await fetch(
-      `http://localhost:3000/movies?${isMovieGenre}${isMovieGenre1}${isMovieYears}${isMovieYears1}${isMovieIMDB}${isMovieIMDB1}${isMovieQuality}${isMovieQuality1}`
+      `http://localhost:3000/movies?${isMovieGenre}${isMovieGenre1}${isMovieYears}${isMovieYears1}${isMovieIMDB}${isMovieIMDB1}${isMovieQuality}${isMovieQuality1}&_page=${page}&_limit=6`
     );
     const responseBodyGenre = await responseGenre.json();
+    totalPages = Math.ceil(responseGenre.headers.get("X-Total-Count") / 6);
+    currentPage = page;
+    paginationButtons(totalPages);
     updateDom(responseBodyGenre);
     return responseBodyGenre;
   } catch (error) {
